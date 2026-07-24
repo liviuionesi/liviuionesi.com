@@ -169,6 +169,11 @@ export const translations: Record<Language, Record<string, string>> = {
     enterFullscreen: 'Enter Fullscreen',
     systemShutdown: 'SYSTEM SHUTDOWN INITIATED...',
     rebootSystem: 'REBOOT SYSTEM',
+    authenticating: 'Authenticating...',
+    accessDenied: 'Access Denied',
+    pageProtected: 'This page is protected.',
+    loginRequired:
+      'You must log in successfully with the authorized administrator account to view this page.',
   },
   de: {
     getInTouch: 'Kontakt aufnehmen',
@@ -322,6 +327,11 @@ export const translations: Record<Language, Record<string, string>> = {
     enterFullscreen: 'Vollbild',
     systemShutdown: 'SYSTEM-SHUTDOWN EINGELEITET...',
     rebootSystem: 'SYSTEM NEUSTARTEN',
+    authenticating: 'Authentifizierung...',
+    accessDenied: 'Zugriff verweigert',
+    pageProtected: 'Diese Seite ist geschützt.',
+    loginRequired:
+      'Sie müssen sich erfolgreich mit dem autorisierten Administratorkonto anmelden, um diese Seite anzuzeigen.',
   },
   ro: {
     getInTouch: 'Contactează-mă',
@@ -473,6 +483,11 @@ export const translations: Record<Language, Record<string, string>> = {
     enterFullscreen: 'Ecran complet',
     systemShutdown: 'OPRIRE SISTEM INIȚIATĂ...',
     rebootSystem: 'REPORNIRE SISTEM',
+    authenticating: 'Autentificare...',
+    accessDenied: 'Acces interzis',
+    pageProtected: 'Această pagină este protejată.',
+    loginRequired:
+      'Trebuie să vă autentificați cu contul de administrator autorizat pentru a vizualiza această pagină.',
   },
   fr: {
     getInTouch: 'Contactez-moi',
@@ -623,6 +638,11 @@ export const translations: Record<Language, Record<string, string>> = {
     enterFullscreen: 'Plein écran',
     systemShutdown: 'ARRÊT DU SYSTÈME INITIÉ...',
     rebootSystem: 'REDÉMARRER LE SYSTÈME',
+    authenticating: 'Authentification...',
+    accessDenied: 'Accès refusé',
+    pageProtected: 'Cette page est protégée.',
+    loginRequired:
+      'Vous devez vous connecter avec le compte administrateur autorisé pour voir cette page.',
   },
 };
 

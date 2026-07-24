@@ -2,6 +2,7 @@
 
 import React, { useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import * as mockDataEn from '@/data/locales/en';
 import * as mockDataRo from '@/data/locales/ro';
 import * as mockDataDe from '@/data/locales/de';
@@ -19,6 +20,7 @@ import CVLanguages from '@/components/cv/visual/CVLanguages';
 import CVCertifications from '@/components/cv/visual/CVCertifications';
 
 function CVContent() {
+  const { data: session, status } = useSession();
   const searchParams = useSearchParams();
   const langParam = searchParams.get('lang');
   const detailLevel = searchParams.get('detail') || 'brief'; // 'brief' | 'detailed'
@@ -26,6 +28,8 @@ function CVContent() {
   const showLanguages = searchParams.get('languages') !== 'false';
   const showCertifications = searchParams.get('certifications') !== 'false';
   const theme = searchParams.get('theme') || 'print'; // 'print' | 'ide'
+
+  const isAuthorized = session?.user?.email === process.env.NEXT_PUBLIC_ADMIN_EMAIL;
 
   // Determine language from URL param or default to 'en'
   const language: Language =
@@ -53,6 +57,26 @@ function CVContent() {
   };
 
   const { linkedInProfile, experience, education, projects, about } = data;
+
+  if (status === 'loading') {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-50">
+        <div className="text-gray-500">{t('authenticating')}</div>
+      </div>
+    );
+  }
+
+  if (!isAuthorized) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-50">
+        <div className="rounded-lg bg-white p-8 text-center shadow-xl">
+          <h1 className="mb-4 text-2xl font-bold text-red-600">{t('accessDenied')}</h1>
+          <p className="text-gray-600">{t('pageProtected')}</p>
+          <p className="mt-2 text-sm text-gray-500">{t('loginRequired')}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

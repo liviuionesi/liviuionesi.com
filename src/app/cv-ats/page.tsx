@@ -2,6 +2,7 @@
 
 import React, { useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import * as mockDataEn from '@/data/locales/en';
 import * as mockDataRo from '@/data/locales/ro';
 import * as mockDataDe from '@/data/locales/de';
@@ -18,9 +19,12 @@ import ATSLanguages from '@/components/cv/ats/ATSLanguages';
 import ATSCertifications from '@/components/cv/ats/ATSCertifications';
 
 function ATSContent() {
+  const { data: session, status } = useSession();
   const searchParams = useSearchParams();
   const langParam = searchParams.get('lang');
   const detailLevel = searchParams.get('detail') || 'detailed';
+
+  const isAuthorized = session?.user?.email === process.env.NEXT_PUBLIC_ADMIN_EMAIL;
 
   const language: Language =
     langParam === 'ro' || langParam === 'de' || langParam === 'fr' || langParam === 'en'
@@ -47,6 +51,26 @@ function ATSContent() {
   const t = (key: string) => translations[language]?.[key] || key;
 
   const { linkedInProfile, experience, education, projects, about } = data;
+
+  if (status === 'loading') {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-50">
+        <div className="text-gray-500">{t('authenticating')}</div>
+      </div>
+    );
+  }
+
+  if (!isAuthorized) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gray-50">
+        <div className="rounded-lg bg-white p-8 text-center shadow-xl">
+          <h1 className="mb-4 text-2xl font-bold text-red-600">{t('accessDenied')}</h1>
+          <p className="text-gray-600">{t('pageProtected')}</p>
+          <p className="mt-2 text-sm text-gray-500">{t('loginRequired')}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="ats-page-container mx-auto min-h-screen max-w-[210mm] bg-white p-12 text-black print:mx-0 print:min-h-0 print:max-w-none print:p-0">
