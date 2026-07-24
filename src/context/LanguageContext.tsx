@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode, useMemo, useCallback } from 'react';
 import * as enData from '@/data/locales/en';
 import * as deData from '@/data/locales/de';
 import * as roData from '@/data/locales/ro';
@@ -646,18 +646,27 @@ export const translations: Record<Language, Record<string, string>> = {
   },
 };
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
+export function LanguageProvider({ children }: Readonly<{ children: ReactNode }>) {
   const [language, setLanguage] = useState<Language>('en');
 
-  const t = (key: string) => {
-    return translations[language][key] || key;
-  };
-
-  return (
-    <LanguageContext.Provider value={{ language, setLanguage, data: dataMap[language], t }}>
-      {children}
-    </LanguageContext.Provider>
+  const t = useCallback(
+    (key: string) => {
+      return translations[language][key] || key;
+    },
+    [language]
   );
+
+  const contextValue = useMemo(
+    () => ({
+      language,
+      setLanguage,
+      data: dataMap[language],
+      t,
+    }),
+    [language, t]
+  );
+
+  return <LanguageContext.Provider value={contextValue}>{children}</LanguageContext.Provider>;
 }
 
 export function useLanguage() {
