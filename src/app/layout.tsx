@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
+import { Inter, JetBrains_Mono, Outfit } from 'next/font/google';
 import './globals.css';
 
 import { NavigationProvider } from '@/context/NavigationContext';
@@ -10,6 +10,12 @@ import { SessionProvider } from '@/components/providers/SessionProvider';
 
 const inter = Inter({
   variable: '--font-inter',
+  subsets: ['latin'],
+  display: 'optional',
+});
+
+const outfit = Outfit({
+  variable: '--font-outfit',
   subsets: ['latin'],
   display: 'optional',
 });
@@ -70,7 +76,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} bg-ide-bg text-ide-text antialiased`}
+        className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} bg-ide-bg text-ide-text antialiased`}
       >
         <ThemeProvider>
           <SessionProvider>

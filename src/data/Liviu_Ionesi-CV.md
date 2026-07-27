@@ -139,20 +139,24 @@ Entwicklung von Testautomatisierungslösungen im Automotive-Umfeld.
 
 ## AUSBILDUNG
 
-**Staatlich geprüfter Informatiker**
-[Gottlieb-Daimler-Schule 2 – Akademie für Datenverarbeitung (ADV), Böblingen](https://gds2.de) | _2011 – 2014_
-
-- Abschluss mit Belobigung
-
-**Master Lehramt Mathematik**
-[West-Universität Temeswar](https://info.uvt.ro/en/) | _2009 – 2011_
-
-- Erasmus-Aufenthalt an der Universität Stuttgart
-
-**Bachelor Mathematik und Informatik**
-[West-Universität Temeswar](https://info.uvt.ro/en/) | _2006 – 2009_
-
-- Abschlussnote: 10,0 / 10
+|                                                                                                |                        |
+| :--------------------------------------------------------------------------------------------- | ---------------------: |
+| **Staatlich geprüfter Informatiker — Technische Systeme**                                      |          _2011 – 2014_ |
+| **[Gottlieb-Daimler-Schule 2 - Akademie für Datenverarbeitung (ADV)](https://gds2.de)**        | Böblingen, Deutschland |
+| Note: Abgeschlossen mit Belobigung                                                             |                        |
+| &nbsp;                                                                                         |                 &nbsp; |
+| **Master — Lehramt Mathematik**                                                                |          _2009 – 2011_ |
+| **[West-Universität Temeswar (Universitatea de Vest din Timișoara)](https://info.uvt.ro/en/)** |     Temeswar, Rumänien |
+| Note: 7,70 / 10 (Jahr 1) & 7,66 / 10 (Jahr 2)                                                  |                        |
+| &nbsp;                                                                                         |                 &nbsp; |
+| **Bachelor — Mathematik und Informatik**                                                       |          _2006 – 2009_ |
+| **[West-Universität Temeswar (Universitatea de Vest din Timișoara)](https://info.uvt.ro/en/)** |     Temeswar, Rumänien |
+| Note: 10 / 10 (Abschlussprüfung) &#124; 9,02 / 10 (Gesamtdurchschnitt)                         |                        |
+| &nbsp;                                                                                         |                 &nbsp; |
+| **Abitur (Bacalaureat) — Mathematik und Informatik**                                           |          _2002 – 2006_ |
+| **[Nationalkolleg für Informatik „Spiru Haret“ Suceava](https://www.cni-sv.ro/)**              |      Suceava, Rumänien |
+| Note: 9,81 / 10                                                                                |                        |
+| Profil: Mathematik & Informatik (Intensiv)                                                     |                        |
 
 ## ZERTIFIZIERUNGEN
 
@@ -179,19 +183,64 @@ Entwicklung von Testautomatisierungslösungen im Automotive-Umfeld.
 - Rumänisch – Muttersprache
 - Französisch – Grundkenntnisse
 
----
+## PROJEKTE
 
-## POSITIONIERUNG AM MARKT
+### Filmpire Microservices Platform
 
-**Technical Lead | Software Architect | Senior Software Engineer**
+**[GitHub: pehlivanu/filmpire-microservices](https://github.com/pehlivanu/filmpire-microservices)** | _Java 25, Spring Boot 3.5, Spring Cloud, PostgreSQL, MongoDB, Redis, Spring AI_
 
-**Schwerpunkte:**
+Ganzheitliche Enterprise-Microservices-Plattform zur Entdeckung von Filmen, von der ersten Idee bis zum einsatzbereiten Produkt.
 
-- Softwarearchitektur
-- Technische Projektführung
-- Enterprise-Modernisierung
-- Cloud-Transformation
-- Full-Stack-Entwicklung
-- Java & Spring Ecosystem
-- Microservices
-- Azure & Kubernetes
+- **Backend & Cloud:** 8 unabhängige Java 25 / Spring Boot 3.5 Services inkl. Spring Cloud (Eureka, API Gateway), PostgreSQL/MongoDB, Redis-Cache.
+- **KI & Architektur:** Integration von Spring AI (Whisper/GPT-4) via REST und gRPC; Nutzung von Record-DTOs und Virtual Threads.
+- **Qualität & DevOps:** Abgesichert durch JUnit 5, Testcontainers (85% JaCoCo Coverage) und GitHub Actions CI/CD; Deployment via Kubernetes (Minikube).
+
+### Defense Asset Manager
+
+**[GitHub: pehlivanu/defense-asset-manager](https://github.com/pehlivanu/defense-asset-manager)** | _React 19, Vite, Zustand, Material UI v9, MSW, OpenAPI 3.1, TypeScript_
+
+Moderne React 19 Enterprise-Anwendung für das Asset- und Personalmanagement im Verteidigungssektor.
+
+- **Architektur:** Strikte Feature-basierte (Domain-Driven) Architektur zur Unterstützung einer SAFe-Bereitstellung über mehrere Teams.
+- **API & Mocking:** Contract-First-Ansatz (OpenAPI 3.1) mit Mock Service Worker (MSW) für unabhängige Entwicklung.
+- **State & UI:** State-Management mit Zustand + Immer; barrierefreie Material UI v9-Komponenten mit sicherheitskritischer UX.
+
+### Antigravity IDE Portfolio
+
+**[GitHub: pehlivanu/portfolio-site](https://github.com/pehlivanu/portfolio-site)** | _Next.js 15, TypeScript, Tailwind CSS, Geolocation API, PDF Generation, Framer Motion_
+
+Hochgradig interaktives Entwickler-Portfolio, das die Ästhetik der internen Google Antigravity IDE detailliert nachbildet.
+
+- **Frontend-Exzellenz:** Next.js 15 App Router mit komplexen UI-Komponenten (Command Palette, Explorer) und immersiven Framer Motion Animationen.
+- **Features:** Automatisierte PDF-Generierung des Lebenslaufs in mehreren Vorlagen und Sprachen.
+- **Innovation:** Dynamisches Kontaktformular mit Geolocation API zur Berechnung der physischen Distanz zum Besucher.
+
+### Filmpire Frontend
+
+**[GitHub: pehlivanu/filmpire](https://github.com/pehlivanu/filmpire)** | _React 17, Material-UI, Redux Toolkit, Alan AI_
+
+Moderne, interaktive React-Anwendung als dedizierter Frontend-Client für das Filmpire Microservices-Backend.
+
+- **UI & State:** Entwicklung performanter Komponenten mit React 17, Material-UI und Redux Toolkit; TMDB API-Integration.
+- **KI-Integration:** Vollständig konversationelle Sprachsteuerung über das Alan AI SDK.
+- **Qualitätssicherung:** Etablierung des Airbnb-Standards (ESLint) sowie umfassende Tests mit Jest und React Testing Library.
+
+### DevOps Toolchain Showcase
+
+**[GitHub: pehlivanu/devops-toolchain-showcase](https://github.com/pehlivanu/devops-toolchain-showcase)** | _Jenkins, JFrog Artifactory, Podman, Gradle, Java 17_
+
+Vollständige, containerisierte CI/CD-Toolchain zur Demonstration moderner Enterprise-DevOps-Praktiken (orchestriert über Podman Compose).
+
+- **Pipelines:** Automatisierte Build-, Test- und Deployment-Pipelines mit angepasstem Jenkins-Server (DooD) und JFrog Artifactory.
+- **Qualitätssicherung:** Integriertes JaCoCo Code-Coverage-Reporting und automatisiertes Artefakt-Publishing.
+- **Tooling & Integration:** Entwicklung eigener Bash-, curl- und jq-Skripte zur Metrik-Übertragung per REST-API an externe ALM/MQC-Systeme.
+
+### DevFlow - Full-Stack Q&A Platform
+
+**[GitHub: pehlivanu/devflow](https://github.com/pehlivanu/devflow)** | _Next.js 14, TypeScript 5, MongoDB Atlas, Tailwind CSS, OpenAI API_
+
+Community-getriebene Q&A-Plattform für Entwickler mit robustem Tagging-System, globaler Suche und personalisierten Feeds.
+
+- **Full-Stack:** Next.js 14 App Router mit Server Actions, NextAuth.js (OAuth + Credentials) und Zod-Validierung.
+- **Features:** Integrierte Reputations- und Badge-Engine zur Gamifizierung der Nutzerteilnahme.
+- **KI-Unterstützung:** Generierung umfassender Antworten und Code-Snippets via OpenAI API.
