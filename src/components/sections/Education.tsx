@@ -60,6 +60,19 @@ const getRoleColor = (id: number) => {
   }
 };
 
+const getGradientColor = (id: number) => {
+  switch (id) {
+    case 1:
+      return 'bg-blue-500';
+    case 2:
+      return 'bg-purple-500';
+    case 3:
+      return 'bg-green-500';
+    default:
+      return 'bg-orange-500';
+  }
+};
+
 import { useLanguage } from '@/context/LanguageContext';
 import { Education as EducationType } from '@/types/data';
 
@@ -67,7 +80,7 @@ const EducationCard = ({ edu, isActive }: { edu: EducationType; isActive: boolea
   const { t } = useLanguage();
   const roleColor = getRoleColor(edu.id);
   // Use localized type without hyphens
-  const tagContent = edu.type ? edu.type.replace(/-/g, ' ') : edu.degree;
+  const tagContent = edu.type ? edu.type.replaceAll('-', ' ') : edu.degree;
 
   return (
     <div
@@ -85,15 +98,7 @@ const EducationCard = ({ edu, isActive }: { edu: EducationType; isActive: boolea
       <div className="bg-ide-card-bg border-ide-border hover:border-ide-accent/50 group relative overflow-hidden rounded-lg border p-6 transition-colors">
         {/* Subtle gradient overlay based on role type */}
         <div
-          className={`absolute top-0 left-0 h-full w-1 opacity-50 ${
-            edu.id === 2
-              ? 'bg-purple-500'
-              : edu.id === 1
-                ? 'bg-blue-500'
-                : edu.id === 3
-                  ? 'bg-green-500'
-                  : 'bg-orange-500'
-          }`}
+          className={`absolute top-0 left-0 h-full w-1 opacity-50 ${getGradientColor(edu.id)}`}
         />
 
         <div className="mb-4 flex flex-col">
@@ -106,6 +111,14 @@ const EducationCard = ({ edu, isActive }: { edu: EducationType; isActive: boolea
               </span>
               <span className="font-bold text-gray-500 opacity-100">/&gt;</span>
             </h3>
+            <p className="text-ide-text-active mt-1 pl-1 text-base font-semibold">
+              <Highlight text={edu.degree} />
+              {edu.studyField && (
+                <span className="text-ide-text ml-1 font-normal">
+                  — <Highlight text={edu.studyField} />
+                </span>
+              )}
+            </p>
           </div>
 
           {/* Row 2: Metadata Grid */}

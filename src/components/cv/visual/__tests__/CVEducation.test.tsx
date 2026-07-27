@@ -15,6 +15,7 @@ describe('CVEducation Component', () => {
       year: '2016 - 2020',
       description: 'Studied algorithms.',
       grade: 'A',
+      url: 'https://example.com',
     },
   ];
 
@@ -26,7 +27,8 @@ describe('CVEducation Component', () => {
     );
 
     expect(screen.getByText('education')).toBeInTheDocument();
-    expect(screen.getByText('Computer Science')).toBeInTheDocument();
+    expect(screen.getByText('BSc')).toBeInTheDocument();
+    expect(screen.getByText(/Computer Science/)).toBeInTheDocument();
     expect(screen.getByText('Tech University')).toBeInTheDocument();
     expect(screen.getByText('2016 - 2020')).toBeInTheDocument();
     expect(screen.getByText(/Studied algorithms/i)).toBeInTheDocument();
@@ -35,7 +37,7 @@ describe('CVEducation Component', () => {
   it('hides description and grade in summary mode', () => {
     render(<CVEducation education={mockEducation} theme="ide" detailLevel="summary" t={mockT} />);
 
-    expect(screen.getByText('Computer Science')).toBeInTheDocument();
+    expect(screen.getByText('BSc')).toBeInTheDocument();
     expect(screen.queryByText(/Studied algorithms/i)).not.toBeInTheDocument();
   });
 });

@@ -11,7 +11,27 @@ interface ATSHeaderProps {
   t: (key: string) => string;
 }
 
-export default function ATSHeader({ linkedInProfile, about, detailLevel, t }: ATSHeaderProps) {
+export default function ATSHeader({
+  linkedInProfile,
+  about,
+  detailLevel,
+  t,
+}: Readonly<ATSHeaderProps>) {
+  let summaryContent = <p>{linkedInProfile.about}</p>;
+  if (detailLevel === 'detailed') {
+    summaryContent = (
+      <div className="prose prose-sm max-w-none text-black">
+        <ReactMarkdown>{about.description}</ReactMarkdown>
+      </div>
+    );
+  } else if (detailLevel === 'linkedin') {
+    summaryContent = (
+      <div className="prose prose-sm max-w-none text-black">
+        <ReactMarkdown>{linkedInProfile.linkedinBio || linkedInProfile.about}</ReactMarkdown>
+      </div>
+    );
+  }
+
   return (
     <>
       {/* 1. HEADER / CONTACT INFO */}
@@ -88,15 +108,7 @@ export default function ATSHeader({ linkedInProfile, about, detailLevel, t }: AT
         <h2 className="mb-4 border-b border-gray-400 pb-1 text-xl font-bold uppercase">
           {t('cvProfessionalSummary')}
         </h2>
-        <div className="text-justify text-sm leading-relaxed">
-          {detailLevel === 'detailed' ? (
-            <div className="prose prose-sm max-w-none text-black">
-              <ReactMarkdown>{about.description}</ReactMarkdown>
-            </div>
-          ) : (
-            <p>{linkedInProfile.about}</p>
-          )}
-        </div>
+        <div className="text-justify text-sm leading-relaxed">{summaryContent}</div>
       </section>
     </>
   );

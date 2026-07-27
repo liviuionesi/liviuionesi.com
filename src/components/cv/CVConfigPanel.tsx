@@ -4,14 +4,14 @@ import React, { useState } from 'react';
 import { LuPrinter, LuX, LuFileText, LuLayoutTemplate, LuEye } from 'react-icons/lu';
 import { useLanguage } from '@/context/LanguageContext';
 
-export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
+export default function CVConfigPanel({ onClose }: Readonly<{ onClose?: () => void }>) {
   const { t, language } = useLanguage();
 
-  const [detailLevel, setDetailLevel] = useState<'brief' | 'detailed'>('brief');
+  const [detailLevel, setDetailLevel] = useState<'brief' | 'linkedin' | 'detailed'>('brief');
   const [showProjects, setShowProjects] = useState(true);
   const [showLanguages, setShowLanguages] = useState(true);
   const [showCertifications, setShowCertifications] = useState(true);
-  const [theme, setTheme] = useState<'print' | 'ats'>('print');
+  const [theme, setTheme] = useState<'print' | 'ats' | 'markdown'>('print');
 
   const handleOpenCV = () => {
     const params = new URLSearchParams();
@@ -21,8 +21,10 @@ export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
     params.set('languages', showLanguages.toString());
     params.set('certifications', showCertifications.toString());
 
-    // Direct ATS theme to the ats page, else the visual print page
-    const baseUrl = theme === 'ats' ? '/cv-ats' : '/cv';
+    // Direct ATS theme to the ats page, markdown to markdown page, else the visual print page
+    let baseUrl = '/cv';
+    if (theme === 'ats') baseUrl = '/cv-ats';
+    if (theme === 'markdown') baseUrl = '/cv-markdown';
 
     window.open(`${baseUrl}?${params.toString()}`, '_blank');
   };
@@ -49,8 +51,13 @@ export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
           </div>
 
           <div className="space-y-2">
-            <label className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors">
+            <label
+              htmlFor="detail-brief"
+              aria-label={t('briefSummary') || 'Brief Summary'}
+              className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors"
+            >
               <input
+                id="detail-brief"
                 type="radio"
                 name="detailLevel"
                 checked={detailLevel === 'brief'}
@@ -68,8 +75,37 @@ export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
               </div>
             </label>
 
-            <label className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors">
+            <label
+              htmlFor="detail-linkedin"
+              aria-label={t('linkedinView') || 'LinkedIn Format'}
+              className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors"
+            >
               <input
+                id="detail-linkedin"
+                type="radio"
+                name="detailLevel"
+                checked={detailLevel === 'linkedin'}
+                onChange={() => setDetailLevel('linkedin')}
+                className="bg-ide-bg border-ide-border mt-1 text-blue-600 focus:ring-blue-500 focus:ring-offset-gray-900"
+              />
+              <div className="flex flex-col">
+                <span className="text-ide-text group-hover:text-ide-text-active text-sm font-medium">
+                  {t('linkedinView') || 'LinkedIn Format'}
+                </span>
+                <span className="mt-0.5 text-xs text-gray-500">
+                  {t('linkedinViewDesc') ||
+                    'Perfect balance for recruiters. Highlights key responsibilities and tech stack.'}
+                </span>
+              </div>
+            </label>
+
+            <label
+              htmlFor="detail-detailed"
+              aria-label={t('detailedView') || 'Detailed View'}
+              className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors"
+            >
+              <input
+                id="detail-detailed"
                 type="radio"
                 name="detailLevel"
                 checked={detailLevel === 'detailed'}
@@ -95,8 +131,12 @@ export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
             <LuLayoutTemplate size={16} />
             <span>{t('sections') || 'Sections'}</span>
           </div>
-          <label className="hover:bg-ide-hover-bg group flex cursor-pointer items-center gap-3 rounded p-2 transition-colors">
+          <label
+            htmlFor="show-languages"
+            className="hover:bg-ide-hover-bg group flex cursor-pointer items-center gap-3 rounded p-2 transition-colors"
+          >
             <input
+              id="show-languages"
               type="checkbox"
               checked={showLanguages}
               onChange={(e) => setShowLanguages(e.target.checked)}
@@ -107,8 +147,12 @@ export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
             </span>
           </label>
 
-          <label className="hover:bg-ide-hover-bg group flex cursor-pointer items-center gap-3 rounded p-2 transition-colors">
+          <label
+            htmlFor="show-certifications"
+            className="hover:bg-ide-hover-bg group flex cursor-pointer items-center gap-3 rounded p-2 transition-colors"
+          >
             <input
+              id="show-certifications"
               type="checkbox"
               checked={showCertifications}
               onChange={(e) => setShowCertifications(e.target.checked)}
@@ -119,8 +163,12 @@ export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
             </span>
           </label>
 
-          <label className="hover:bg-ide-hover-bg group flex cursor-pointer items-center gap-3 rounded p-2 transition-colors">
+          <label
+            htmlFor="show-projects"
+            className="hover:bg-ide-hover-bg group flex cursor-pointer items-center gap-3 rounded p-2 transition-colors"
+          >
             <input
+              id="show-projects"
               type="checkbox"
               checked={showProjects}
               onChange={(e) => setShowProjects(e.target.checked)}
@@ -140,8 +188,13 @@ export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
           </div>
 
           <div className="space-y-2">
-            <label className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors">
+            <label
+              htmlFor="theme-print"
+              aria-label={t('printOptimized') || 'Print Optimized'}
+              className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors"
+            >
               <input
+                id="theme-print"
                 type="radio"
                 name="theme"
                 checked={theme === 'print'}
@@ -159,8 +212,13 @@ export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
               </div>
             </label>
 
-            <label className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors">
+            <label
+              htmlFor="theme-ats"
+              aria-label="ATS Optimized"
+              className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors"
+            >
               <input
+                id="theme-ats"
                 type="radio"
                 name="theme"
                 checked={theme === 'ats'}
@@ -173,6 +231,29 @@ export default function CVConfigPanel({ onClose }: { onClose?: () => void }) {
                 </span>
                 <span className="mt-0.5 text-xs text-gray-500">
                   Uses standard formatting with hidden labels for perfect machine reading.
+                </span>
+              </div>
+            </label>
+
+            <label
+              htmlFor="theme-markdown"
+              aria-label="Markdown Native"
+              className="hover:bg-ide-hover-bg group flex cursor-pointer items-start gap-3 rounded p-2 transition-colors"
+            >
+              <input
+                id="theme-markdown"
+                type="radio"
+                name="theme"
+                checked={theme === 'markdown'}
+                onChange={() => setTheme('markdown')}
+                className="bg-ide-bg border-ide-border mt-1 text-blue-600 focus:ring-blue-500 focus:ring-offset-gray-900"
+              />
+              <div className="flex flex-col">
+                <span className="text-ide-text group-hover:text-ide-text-active text-sm font-medium">
+                  Markdown Native
+                </span>
+                <span className="mt-0.5 text-xs text-gray-500">
+                  Direct render of the pure Markdown CV. Clean, professional, and ATS readable.
                 </span>
               </div>
             </label>

@@ -25,7 +25,8 @@ describe('ATSEducation Component', () => {
     render(<ATSEducation education={mockEducation} detailLevel="detailed" t={mockT} />);
 
     expect(screen.getByText('cvEducation')).toBeInTheDocument();
-    expect(screen.getByText('Data Science')).toBeInTheDocument();
+    expect(screen.getByText('MSc')).toBeInTheDocument();
+    expect(screen.getByText(/Data Science/)).toBeInTheDocument();
     expect(screen.getByText('Data University')).toBeInTheDocument();
     expect(screen.getByText('2018 - 2020')).toBeInTheDocument();
     expect(screen.getByText(/Studied ML and Big Data/)).toBeInTheDocument();
@@ -35,7 +36,7 @@ describe('ATSEducation Component', () => {
   it('hides description and grade in summary mode', () => {
     render(<ATSEducation education={mockEducation} detailLevel="summary" t={mockT} />);
 
-    expect(screen.getByText('Data Science')).toBeInTheDocument();
+    expect(screen.getByText('MSc')).toBeInTheDocument();
     expect(screen.queryByText(/Studied ML and Big Data/)).not.toBeInTheDocument();
     expect(screen.queryByText(/Distinction/)).not.toBeInTheDocument();
   });

@@ -13,7 +13,19 @@ interface CVExperienceProps {
   t: (key: string) => string;
 }
 
-export default function CVExperience({ experience, theme, detailLevel, t }: CVExperienceProps) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const MarkdownUl = ({ ...props }: any) => (
+  <ul className="my-2 list-disc space-y-1 pl-5" {...props} />
+);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const MarkdownLi = ({ ...props }: any) => <li className="pl-1" {...props} />;
+
+export default function CVExperience({
+  experience,
+  theme,
+  detailLevel,
+  t,
+}: Readonly<CVExperienceProps>) {
   return (
     <section className="cv-section">
       <div
@@ -34,101 +46,107 @@ export default function CVExperience({ experience, theme, detailLevel, t }: CVEx
       </div>
 
       <div className="space-y-6">
-        {experience.map((job) => (
-          <div
-            key={job.id}
-            className={clsx(
-              'cv-item relative border-l-2 pl-4',
-              theme === 'ide' ? 'border-ide-border' : 'border-gray-200'
-            )}
-          >
-            <div
-              className={clsx(
-                'absolute top-1.5 -left-[5px] h-2.5 w-2.5 rounded-full border-2',
-                theme === 'ide' ? 'border-ide-bg bg-blue-600' : 'border-white bg-blue-600'
-              )}
-            ></div>
-            <div className="mb-1 flex items-baseline justify-between">
-              <h3
-                className={clsx(
-                  'text-base font-bold',
-                  theme === 'ide' ? 'text-ide-text' : 'text-gray-900'
+        {experience.map((job) => {
+          let experienceContent: React.ReactNode = job.summary;
+          if (detailLevel === 'detailed') {
+            experienceContent = (
+              <div className="prose prose-sm prose-blue dark:prose-invert max-w-none">
+                <p className="mb-2">{job.summary}</p>
+                <ReactMarkdown components={{ ul: MarkdownUl, li: MarkdownLi }}>
+                  {job.description}
+                </ReactMarkdown>
+
+                {job.tech && job.tech.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-1">
+                    {job.tech
+                      .flatMap((t: { skills: string[] }) => t.skills)
+                      .map((skill: string) => (
+                        <span
+                          key={skill}
+                          className={clsx(
+                            'rounded-full border px-2 py-0.5 text-[10px]',
+                            theme === 'ide'
+                              ? 'bg-ide-bg border-ide-line text-ide-text opacity-80'
+                              : 'border-gray-200 bg-gray-50 text-gray-600'
+                          )}
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                  </div>
                 )}
-              >
-                {job.role}
-              </h3>
-              <span
-                className={clsx(
-                  'rounded px-2 py-0.5 font-mono text-xs',
-                  theme === 'ide'
-                    ? 'bg-ide-activity-bar text-gray-400'
-                    : 'bg-gray-100 text-gray-500'
-                )}
-              >
-                {job.period}
-              </span>
-            </div>
-            <div className="mb-2 text-sm font-semibold text-blue-700">
-              {job.websiteUrl ? (
-                <a
-                  href={job.websiteUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex w-fit items-center gap-1 hover:underline"
-                >
-                  {job.company}
-                  <LuExternalLink size={10} className="inline opacity-50" />
-                </a>
-              ) : (
-                job.company
-              )}
-            </div>
+              </div>
+            );
+          } else if (detailLevel === 'linkedin') {
+            experienceContent = (
+              <div className="prose prose-sm prose-blue dark:prose-invert max-w-none">
+                <ReactMarkdown components={{ ul: MarkdownUl, li: MarkdownLi }}>
+                  {job.linkedinDescription || job.summary}
+                </ReactMarkdown>
+              </div>
+            );
+          }
+
+          return (
             <div
+              key={job.id}
               className={clsx(
-                'text-justify text-sm leading-relaxed',
-                theme === 'ide' ? 'text-gray-300' : 'text-gray-700'
+                'cv-item relative border-l-2 pl-4',
+                theme === 'ide' ? 'border-ide-border' : 'border-gray-200'
               )}
             >
-              {detailLevel === 'detailed' ? (
-                <div className="prose prose-sm prose-blue dark:prose-invert max-w-none">
-                  <p className="mb-2">{job.summary}</p>
-                  <ReactMarkdown
-                    components={{
-                      ul: ({ ...props }) => (
-                        <ul className="my-2 list-disc space-y-1 pl-5" {...props} />
-                      ),
-                      li: ({ ...props }) => <li className="pl-1" {...props} />,
-                    }}
-                  >
-                    {job.description}
-                  </ReactMarkdown>
-
-                  {job.tech && job.tech.length > 0 && (
-                    <div className="mt-3 flex flex-wrap gap-1">
-                      {job.tech
-                        .flatMap((t: { skills: string[] }) => t.skills)
-                        .map((skill: string, i: number) => (
-                          <span
-                            key={i}
-                            className={clsx(
-                              'rounded-full border px-2 py-0.5 text-[10px]',
-                              theme === 'ide'
-                                ? 'bg-ide-bg border-ide-line text-ide-text opacity-80'
-                                : 'border-gray-200 bg-gray-50 text-gray-600'
-                            )}
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                    </div>
+              <div
+                className={clsx(
+                  'absolute top-1.5 -left-[5px] h-2.5 w-2.5 rounded-full border-2',
+                  theme === 'ide' ? 'border-ide-bg bg-blue-600' : 'border-white bg-blue-600'
+                )}
+              ></div>
+              <div className="mb-1 flex items-baseline justify-between">
+                <h3
+                  className={clsx(
+                    'text-base font-bold',
+                    theme === 'ide' ? 'text-ide-text' : 'text-gray-900'
                   )}
-                </div>
-              ) : (
-                job.summary
-              )}
+                >
+                  {job.role}
+                </h3>
+                <span
+                  className={clsx(
+                    'rounded px-2 py-0.5 font-mono text-xs',
+                    theme === 'ide'
+                      ? 'bg-ide-activity-bar text-gray-400'
+                      : 'bg-gray-100 text-gray-500'
+                  )}
+                >
+                  {job.period}
+                </span>
+              </div>
+              <div className="mb-2 text-sm font-semibold text-blue-700">
+                {job.websiteUrl ? (
+                  <a
+                    href={job.websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex w-fit items-center gap-1 hover:underline"
+                  >
+                    {job.company}
+                    <LuExternalLink size={10} className="inline opacity-50" />
+                  </a>
+                ) : (
+                  job.company
+                )}
+              </div>
+              <div
+                className={clsx(
+                  'text-justify text-sm leading-relaxed',
+                  theme === 'ide' ? 'text-gray-300' : 'text-gray-700'
+                )}
+              >
+                {experienceContent}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

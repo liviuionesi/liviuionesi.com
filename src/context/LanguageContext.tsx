@@ -143,6 +143,9 @@ export const translations: Record<Language, Record<string, string>> = {
     detailedViewDesc: 'Includes full professional biography and complete job descriptions.',
     printOptimizedDesc: 'Clean white background, optimized for physical paper printing.',
     ideThemeDesc: "Uses the portfolio's dark theme. Best for PDF sharing.",
+    linkedinView: 'LinkedIn Format',
+    linkedinViewDesc:
+      'Perfect balance for recruiters. Highlights key responsibilities and tech stack.',
     openInNewTabDesc:
       "Opens in a new tab. Use your browser's print dialog (Ctrl+P) to save as PDF.",
     cvProfessionalSummary: 'Professional Summary',
@@ -301,6 +304,9 @@ export const translations: Record<Language, Record<string, string>> = {
     detailedViewDesc: 'Enthält vollständige Berufsbiografie und komplette Stellenbeschreibungen.',
     printOptimizedDesc: 'Sauberer weißer Hintergrund, optimiert für den physischen Druck.',
     ideThemeDesc: 'Verwendet das dunkle Design des Portfolios. Am besten zum Teilen als PDF.',
+    linkedinView: 'LinkedIn-Format',
+    linkedinViewDesc:
+      'Perfekte Balance für Recruiter. Hebt wichtige Verantwortlichkeiten und den Tech-Stack hervor.',
     openInNewTabDesc:
       'Öffnet sich in einem neuen Tab. Verwenden Sie den Druckdialog (Strg+P), um als PDF zu speichern.',
     cvProfessionalSummary: 'Berufliches Profil',
@@ -457,6 +463,9 @@ export const translations: Record<Language, Record<string, string>> = {
     detailedViewDesc: 'Include biografia profesională completă și descrierile joburilor.',
     printOptimizedDesc: 'Fundal alb curat, optimizat pentru imprimare.',
     ideThemeDesc: 'Folosește tema întunecată a portofoliului. Ideal pentru partajare PDF.',
+    linkedinView: 'Format LinkedIn',
+    linkedinViewDesc:
+      'Echilibrul perfect pentru recrutori. Evidențiază responsabilitățile cheie și tehnologiile folosite.',
     openInNewTabDesc:
       'Se deschide într-o filă nouă. Folosiți dialogul de imprimare (Ctrl+P) pentru a salva ca PDF.',
     cvProfessionalSummary: 'Rezumat Profesional',
@@ -612,6 +621,9 @@ export const translations: Record<Language, Record<string, string>> = {
     detailedViewDesc: 'Inclut la biographie professionnelle complète et les descriptions de poste.',
     printOptimizedDesc: "Fond blanc propre, optimisé pour l'impression physique.",
     ideThemeDesc: 'Utilise le thème sombre du portfolio. Idéal pour le partage PDF.',
+    linkedinView: 'Format LinkedIn',
+    linkedinViewDesc:
+      'Équilibre parfait pour les recruteurs. Met en évidence les principales responsabilités et la pile technologique.',
     openInNewTabDesc:
       "S'ouvre dans un nouvel onglet. Utilisez la boîte de dialogue d'impression de votre navigateur (Ctrl+P) pour enregistrer en PDF.",
     cvProfessionalSummary: 'Résumé Professionnel',

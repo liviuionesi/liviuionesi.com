@@ -15,7 +15,27 @@ interface CVHeroProps {
   detailLevel: string;
 }
 
-export default function CVHero({ linkedInProfile, about, theme, detailLevel }: CVHeroProps) {
+export default function CVHero({
+  linkedInProfile,
+  about,
+  theme,
+  detailLevel,
+}: Readonly<CVHeroProps>) {
+  let summaryContent: React.ReactNode = linkedInProfile.about;
+  if (detailLevel === 'detailed') {
+    summaryContent = (
+      <div className="prose prose-sm prose-blue dark:prose-invert max-w-none">
+        <ReactMarkdown>{about.description}</ReactMarkdown>
+      </div>
+    );
+  } else if (detailLevel === 'linkedin') {
+    summaryContent = (
+      <div className="prose prose-sm prose-blue dark:prose-invert max-w-none">
+        <ReactMarkdown>{linkedInProfile.linkedinBio || linkedInProfile.about}</ReactMarkdown>
+      </div>
+    );
+  }
+
   return (
     <div
       className={clsx(
@@ -49,13 +69,7 @@ export default function CVHero({ linkedInProfile, about, theme, detailLevel }: C
               theme === 'ide' ? 'text-ide-text opacity-90' : 'text-gray-700'
             )}
           >
-            {detailLevel === 'detailed' ? (
-              <div className="prose prose-sm prose-blue dark:prose-invert max-w-none">
-                <ReactMarkdown>{about.description}</ReactMarkdown>
-              </div>
-            ) : (
-              linkedInProfile.about
-            )}
+            {summaryContent}
           </div>
 
           <div className="mt-4 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm text-gray-600">

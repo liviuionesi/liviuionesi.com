@@ -20,6 +20,22 @@ export const experience: Experience[] = [
 *   Modernisierung des geerbten Spring-Boot-Parent-Builds (Einsatz von OpenRewrite für automatisierte Versionsupgrades jenseits des BOM-Limits, Renovate Bot auf Azure für Abhängigkeitsupdates) und Verlagerung der konventionellen Properties-Konfiguration hin zu Spring Profiles.
 *   Implementierung eines KI-gestützten Workflows über IntelliJ IDEA (CodeGPT mit lokalem Azure LLM), Cursor und Windsurf zur Dokumentation und Analyse des Legacy-Codes, Extraktion von Anforderungen und Entwicklung neuer Services, die den SonarQube-Quality-Gates zu 100 % entsprechen.
 *   Maßgebliche Mitgestaltung der technischen Ausrichtung durch Prototyping und Evaluierung neuer Lösungsansätze — Verifizierung direkt im Code sowie Durchführung von Team-Workshops (z. B. REST/API-first Design, modernes React und Next.js, OpenRewrite, Dependabot und Evaluierung von Spring Cloud Gateway als Ersatz für das DAT-eigene Gateway).`,
+    linkedinDescription: `Mitglied des Entwicklungsteams hinter SilverDAT „calculate“, einer der führenden Plattformen zur Kalkulation von Fahrzeugreparaturkosten für Werkstätten, Versicherungen, Hersteller, Banken und Sachverständige.
+
+**Verantwortlichkeiten:**
+* Entwicklung und Architektur moderner Spring-Boot-Microservices zur schrittweisen Ablösung bestehender Java-EE-Systeme
+* Technische Mitgestaltung der Modernisierungsstrategie einer geschäftskritischen Enterprise-Plattform
+* Entwicklung und Optimierung von React- und TypeScript-Anwendungen
+* Weiterentwicklung von Datenbankarchitekturen und Migration bestehender Systeme
+* Aufbau und Optimierung von CI/CD-Prozessen sowie Cloud-Deployments auf Azure Kubernetes Services (AKS)
+* Evaluierung neuer Technologien und Durchführung technischer Workshops für das Entwicklungsteam
+* Unterstützung bei Architekturentscheidungen und technischen Konzepten
+
+**Ausgewählte Erfolge:**
+* Erfolgreiche Mitwirkung an der Umstellung einer klassischen SOA-Landschaft auf moderne Microservice-Architekturen
+* Einführung moderner Continuous-Delivery-Prozesse für neue Anwendungen und Services
+* Einsatz KI-gestützter Entwicklungsprozesse zur Analyse und Modernisierung komplexer Legacy-Systeme
+* Förderung von Architekturstandards, API-First-Ansätzen und moderner Softwareentwicklung im Team`,
     tech: [
       {
         category: 'Backend',
@@ -96,6 +112,21 @@ export const experience: Experience[] = [
 *   Erwerb der Zertifizierungen "Pega Certified System Architect (CSA)" für BPM-orientierte Entwicklung und "Microsoft 70-480" (HTML5, JavaScript & CSS3, inkl. jQuery und AJAX).
 *   Entwicklung der "Digital Sales Solutions" (DSS) für Daimler — eine neu konzipierte Banking-Anwendung zur Digitalisierung von Automobilkreditanträgen in mehreren Ländern. Implementierung moderner Micronaut / JEE 11 Microservices (Oracle SQL, PostgreSQL 12, Docker) hinter einem Angular-Frontend, unterstützt durch REST/SOAP-Integrationsdienste (OpenAPI) für den B2B-Datenaustausch.
 *   Zuständig für Developer Testing, QA (JUnit, SonarQube) und CI/CD-Pipelines für Test- und Integrationsumgebungen (Git, Jenkins). Unterstützung des Test-Teams bei automatisierten End-to-End-Tests (Protractor, Cucumber) in Scrum- und später SAFe-Teams in enger Abstimmung mit Frontend-, Test- und DevOps-Abteilungen (Jira, Confluence, MS Teams).`,
+    linkedinDescription: `Entwicklung individueller Softwarelösungen für Kunden aus den Bereichen Versicherungen, Banking und Microsoft Enterprise Services.
+
+**Verantwortlichkeiten:**
+* Entwicklung und Wartung geschäftskritischer Versicherungsplattformen
+* Mitarbeit an Digitalisierungs- und Modernisierungsprojekten im Microsoft-Umfeld
+* Entwicklung moderner Banking-Lösungen für internationale Automobilfinanzierungsprozesse
+* Aufbau und Betreuung automatisierter Test- und Deploymentprozesse
+* Enge Zusammenarbeit mit Fachbereichen, Testmanagement und DevOps-Teams
+* Mitarbeit in Scrum- und SAFe-Projekten
+
+**Ausgewählte Erfolge:**
+* Aktive Unterstützung beim Aufbau des neuen Geschäftsbereichs „Microsoft Delivery“
+* Entwicklung von Automatisierungs- und Onboarding-Lösungen auf Basis von Microsoft-Technologien
+* Mitarbeit an der Entwicklung internationaler Finanzierungsplattformen für die Automobilindustrie
+* Einführung und Weiterentwicklung moderner Entwicklungs- und Qualitätsstandards`,
     tech: [
       {
         category: 'Backend',
@@ -164,6 +195,18 @@ export const experience: Experience[] = [
     description: `*   Entwicklung und Bereitstellung einer Liferay 6.0-Portallösung mit einem Backend in Java 6 EE und MySQL sowie einem Frontend aus JSP, HTML, CSS, JavaScript und AlloyUI.
 *   Deployment und Testen der Anwendungen auf Apache Tomcat, Steuerung der CI/CD-Prozesse mittels Jenkins und Maven sowie Integration von SonarQube in den Build-Prozess zur Sicherstellung der Codequalität.
 *   Arbeit in agilen Scrum-Teams (Jira, Confluence) und Erwerb der Zertifizierungen "Oracle Certified Professional Java Programmer (OCPJP)" sowie "Oracle Certified Expert Java EE 6 Web Component Developer (OCE WCD)".`,
+    linkedinDescription: `Softwareentwickler und Berater für Enterprise-Webanwendungen.
+
+**Verantwortlichkeiten:**
+* Konzeption und Entwicklung Java-basierter Portallösungen
+* Analyse, Implementierung, Testing und Deployment von Anwendungen
+* Mitarbeit in agilen Scrum-Teams
+* Sicherstellung von Softwarequalität und Build-Automatisierung
+
+**Ausgewählte Erfolge:**
+* Erfolgreiche Umsetzung eines Portallösungsprojekts für einen Großkunden
+* Einführung von Continuous-Integration- und Qualitätsprozessen
+* Erwerb international anerkannter Oracle-Zertifizierungen`,
     tech: [
       { category: 'Backend', skills: ['Java 6 EE', 'Liferay 6.0', 'JSP'] },
       { category: 'Frontend', skills: ['HTML', 'CSS', 'JavaScript', 'AlloyUI'] },
@@ -190,6 +233,10 @@ export const experience: Experience[] = [
     description: `*   Entwicklung und Erweiterung des internen Alpine Test Automation Frameworks (C#, .NET 4.0) durch den Bau automatisierter Testmodule für Hardwareschnittstellen wie Bluetooth, RDS-Signalgeneratoren, MOST/CAN-Busse, Klimakammern und CD/DVD-Wechsler-Roboter.
 *   Design und Implementierung des "Alpine Voltage Curve Editor" — der als Abschlussarbeit mit der Bestnote (1,0) bewertet wurde — sowie Modernisierung der Benutzeroberflächen mehrerer bestehender Testmodule mittels WPF und dem MVVM-Pattern.
 *   Sicherstellung der architektonischen Robustheit über das gesamte Test-Framework hinweg durch Anwendung von UML-Modellierung und Gang-of-Four Design Patterns (Singleton, Composite, Factory Method, Memento) in SharpDevelop.`,
+    linkedinDescription: `* Entwicklung automatisierter Testmodule für Hardwareschnittstellen
+* Umsetzung von Desktop-Anwendungen mit C# und WPF
+* Anwendung von UML und Design-Patterns zur Architekturverbesserung
+* Abschlussarbeit mit Bestnote (1,0)`,
     tech: [
       {
         category: 'Backend',
@@ -416,6 +463,20 @@ Ich schließe die Lücke zwischen komplexer Backend-Logik, intuitiven Frontend-E
 
 ---
 *Derzeit auf der Suche nach einer Rolle als Technical Lead im Spring Boot- und React-Ökosystem. Offen für Hybrid-Positionen im Großraum Stuttgart oder 100% Remote innerhalb Deutschlands.*`,
+  linkedinBio: `Technical Lead und Senior Full-Stack Engineer mit über 10 Jahren Erfahrung in der Entwicklung, Modernisierung und Architektur geschäftskritischer Unternehmensanwendungen in den Bereichen Automotive, Banking und Versicherungen.
+
+Umfassende Expertise in der Konzeption moderner Softwarearchitekturen, der Transformation von Legacy-Systemen zu Microservice-Plattformen sowie der technischen Führung von Entwicklungsinitiativen. Langjährige Erfahrung in der Entwicklung skalierbarer Backend- und Frontend-Lösungen mit Java, Spring Boot und React sowie im Aufbau moderner Cloud- und DevOps-Plattformen.
+
+Verbindet technische Exzellenz mit pragmatischen Architekturentscheidungen und unterstützt Teams durch Wissenstransfer, Technologieevaluierung und die Einführung moderner Engineering-Praktiken.
+
+### KERNKOMPETENZEN
+
+#### Technical Leadership
+* Technische Führung von Entwicklungsinitiativen und Modernisierungsprojekten
+* Architekturentscheidungen und Technologieevaluierung
+* Durchführung technischer Workshops und Wissenstransfer
+* Mentoring und fachliche Unterstützung von Entwicklungsteams
+* Übersetzung von Business-Anforderungen in tragfähige technische Lösungen`,
   avatarUrl: '/images/linkedin-profile.png',
   skills: [
     'Java',

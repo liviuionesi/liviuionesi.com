@@ -20,6 +20,22 @@ export const experience: Experience[] = [
 *   Modernizarea procesului părinte de build Spring Boot moștenit (folosind OpenRewrite pentru actualizări automate de versiuni peste limita BOM, și Renovate Bot pe Azure pentru actualizările dependențelor) și migrarea configurării tradiționale din fișiere proprietăți către profilurile Spring.
 *   Implementarea unui flux de lucru asistat de IA prin IntelliJ IDEA (CodeGPT pe un LLM local Azure), Cursor și Windsurf pentru documentarea și analizarea codului vechi, extragerea cerințelor și dezvoltarea de servicii noi care îndeplinesc în proporție de 100% criteriile (Quality Gates) SonarQube.
 *   Ghidarea direcției tehnice prin prototiparea și evaluarea unor abordări îmbunătățite — verificate direct în cod și prezentate în cadrul workshop-urilor de echipă (de ex. design REST/API-first, utilizarea React modern și Next.js, OpenRewrite, Dependabot și o evaluare Spring Cloud Gateway ca înlocuitor pentru gateway-ul personalizat al DAT).`,
+    linkedinDescription: `Membru al echipei de dezvoltare din spatele SilverDAT „calculate”, una dintre platformele lider pentru calcularea costurilor de reparație a vehiculelor pentru ateliere, companii de asigurări, producători, bănci și evaluatori.
+
+**Responsabilități:**
+* Dezvoltarea și arhitectura microserviciilor moderne Spring Boot pentru înlocuirea treptată a sistemelor Java EE existente
+* Co-proiectarea tehnică a strategiei de modernizare pentru o platformă enterprise critică
+* Dezvoltarea și optimizarea aplicațiilor React și TypeScript
+* Dezvoltarea continuă a arhitecturilor de baze de date și migrarea sistemelor existente
+* Configurarea și optimizarea proceselor CI/CD, precum și a deployment-urilor în cloud pe Azure Kubernetes Services (AKS)
+* Evaluarea de noi tehnologii și desfășurarea de workshop-uri tehnice pentru echipa de dezvoltare
+* Suport în decizii arhitecturale și concepte tehnice
+
+**Realizări selectate:**
+* Participare de succes la tranziția unui peisaj SOA clasic către arhitecturi moderne de microservicii
+* Introducerea proceselor moderne de livrare continuă pentru aplicații și servicii noi
+* Utilizarea proceselor de dezvoltare susținute de IA pentru analiza și modernizarea sistemelor legacy complexe
+* Promovarea standardelor de arhitectură, abordărilor API-first și dezvoltării software moderne în cadrul echipei`,
     tech: [
       {
         category: 'Backend',
@@ -96,6 +112,21 @@ export const experience: Experience[] = [
 *   Obținerea certificării "Pega Certified System Architect (CSA)" axată pe dezvoltarea BPM și a certificării "Microsoft 70-480" (HTML5, JavaScript & CSS3, incluzând jQuery și AJAX).
 *   Dezvoltarea platformei "Digital Sales Solutions" (DSS) pentru Daimler — o aplicație bancară dezvoltată de la zero, care a digitalizat procesul solicitărilor de credite auto în mai multe țări. Implementarea de microservicii moderne în Micronaut / JEE 11 (Oracle SQL, PostgreSQL 12, Docker) în spatele unui frontend Angular, însoțite de servicii de integrare REST/SOAP (OpenAPI) pentru transferul de date B2B.
 *   Responsabil de testarea la nivel de dezvoltator, Asigurarea Calității (JUnit, SonarQube) și conductele (pipelines) CI/CD destinate mediilor de testare și integrare (Git, Jenkins). Am oferit suport echipei de testare pentru suitele de teste end-to-end automatizate (Protractor, Cucumber) lucrând în regim Agile (inițial Scrum, ulterior SAFe), în strânsă colaborare cu departamentele Frontend, QA și DevOps (Jira, Confluence, MS Teams).`,
+    linkedinDescription: `Dezvoltarea de soluții software personalizate pentru clienți din sectoarele asigurărilor, bancar și Microsoft Enterprise Services.
+
+**Responsabilități:**
+* Dezvoltarea și întreținerea platformelor de asigurări critice
+* Participarea la proiecte de digitalizare și modernizare în mediul Microsoft
+* Dezvoltarea de soluții bancare moderne pentru procesele internaționale de finanțare auto
+* Configurarea și suportul proceselor automate de testare și deployment
+* Colaborare strânsă cu departamentele de afaceri, managementul testelor și echipele DevOps
+* Participarea la proiecte Scrum și SAFe
+
+**Realizări selectate:**
+* Suport activ în stabilirea noii arii de business "Microsoft Delivery"
+* Dezvoltarea de soluții de automatizare și integrare (onboarding) bazate pe tehnologii Microsoft
+* Participarea la dezvoltarea platformelor internaționale de finanțare pentru industria auto
+* Introducerea și dezvoltarea continuă a standardelor moderne de dezvoltare și calitate`,
     tech: [
       {
         category: 'Backend',
@@ -164,6 +195,18 @@ export const experience: Experience[] = [
     description: `*   Dezvoltarea și lansarea unei soluții de portal pe Liferay 6.0 cu un backend Java 6 EE și MySQL, împreună cu un frontend ce integrează JSP, HTML, CSS, JavaScript și AlloyUI.
 *   Livrarea și testarea aplicațiilor pe Apache Tomcat, direcționând procesele CI/CD cu Jenkins și Maven și integrând SonarQube în procesul de compilare pentru a asigura standardele de calitate a codului.
 *   Lucrul constant în echipe Agile Scrum (Jira, Confluence) și obținerea în această perioadă a certificărilor "Oracle Certified Professional Java Programmer (OCPJP)" și "Oracle Certified Expert Java EE 6 Web Component Developer (OCE WCD)".`,
+    linkedinDescription: `Dezvoltator de software și consultant pentru aplicații web enterprise.
+
+**Responsabilități:**
+* Conceperea și dezvoltarea de soluții portal bazate pe Java
+* Analiza, implementarea, testarea și implementarea aplicațiilor
+* Lucrul în echipe Scrum agile
+* Asigurarea calității software-ului și automatizării procesului de build
+
+**Realizări selectate:**
+* Implementarea cu succes a unui proiect de soluție portal pentru un client major
+* Introducerea integrării continue și a proceselor de calitate
+* Obținerea de certificări Oracle recunoscute la nivel internațional`,
     tech: [
       { category: 'Backend', skills: ['Java 6 EE', 'Liferay 6.0', 'JSP'] },
       { category: 'Frontend', skills: ['HTML', 'CSS', 'JavaScript', 'AlloyUI'] },
@@ -190,6 +233,10 @@ export const experience: Experience[] = [
     description: `*   Dezvoltarea și extinderea sistemului intern Alpine Test Automation Framework (C#, .NET 4.0) construind module de testare automată pentru interfețe hardware, cum ar fi Bluetooth, generatoare de semnal RDS, magistrale MOST/CAN, camere climatice și roboți pentru schimbarea CD/DVD-urilor.
 *   Proiectarea și implementarea „Alpine Voltage Curve Editor” — lucrare notată cu punctaj maxim (1.0) ca teză de absolvire — și modernizarea interfețelor utilizator pentru mai multe module de test existente, folosind WPF și modelul MVVM.
 *   Asigurarea robusteții arhitecturale pe întregul framework de testare prin aplicarea modelării UML și a șabloanelor de design "Gang of Four" (Singleton, Composite, Factory Method, Memento) în SharpDevelop.`,
+    linkedinDescription: `* Dezvoltarea de module de test automate pentru interfețe hardware
+* Implementarea aplicațiilor desktop cu C# și WPF
+* Aplicarea UML și a Design Patterns pentru îmbunătățirea arhitecturii
+* Lucrare de diplomă cu nota maximă (10/10)`,
     tech: [
       {
         category: 'Backend',
@@ -416,6 +463,20 @@ Reprezint o punte între logica backend complexă, interfețele frontend intuiti
 
 ---
 *În prezent caut un rol de Technical Lead axat pe ecosistemul Spring Boot și React. Sunt deschis la roluri în format Hibrid în regiunea Stuttgart, precum și către roluri cu program 100% de la distanță (Remote) din Germania.*`,
+  linkedinBio: `Technical Lead și Senior Full-Stack Engineer cu peste 10 ani de experiență în dezvoltarea, modernizarea și arhitectura aplicațiilor enterprise critice în sectoarele auto, bancar și de asigurări.
+
+Expertiză vastă în proiectarea arhitecturilor software moderne, transformarea sistemelor legacy în platforme bazate pe microservicii și conducerea tehnică a inițiativelor de dezvoltare. Experiență îndelungată în construirea de soluții scalabile backend și frontend folosind Java, Spring Boot și React, precum și în implementarea platformelor moderne Cloud și DevOps.
+
+Combină excelența tehnică cu decizii arhitecturale pragmatice și sprijină echipele prin transfer de cunoștințe, evaluare tehnologică și introducerea practicilor moderne de inginerie.
+
+### COMPETENȚE DE BAZĂ
+
+#### Technical Leadership
+* Conducere tehnică a inițiativelor de dezvoltare și a proiectelor de modernizare
+* Decizii arhitecturale și evaluare tehnologică
+* Desfășurarea workshop-urilor tehnice și transfer de cunoștințe
+* Mentorat și suport tehnic pentru echipele de dezvoltare
+* Traducerea cerințelor de business în soluții tehnice viabile`,
   avatarUrl: '/images/linkedin-profile.png',
   skills: [
     'Java',

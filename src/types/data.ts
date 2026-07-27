@@ -15,6 +15,7 @@ export interface Experience {
   period: string;
   summary: string;
   description: string;
+  linkedinDescription?: string;
   tech: TechCategory[];
   dualStudy?: string;
 }
@@ -63,6 +64,7 @@ export interface LinkedInProfile {
   connections: string;
   about: string;
   fullBio: string;
+  linkedinBio?: string;
   avatarUrl: string;
   skills: string[];
   certifications: Certification[];

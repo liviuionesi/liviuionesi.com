@@ -20,6 +20,22 @@ export const experience: Experience[] = [
 *   Modernized the inherited Spring Boot parent build (OpenRewrite for automated version bumps past the BOM ceiling, a Renovate bot on Azure for dependency updates) and moved configuration from folder-based properties to Spring profiles.
 *   Built an AI-augmented workflow across IntelliJ IDEA (CodeGPT on a local Azure LLM), Cursor, and Windsurf to document and analyze legacy code, extract requirements, and implement new services kept 100% SonarQube-clean.
 *   Drove technical direction by prototyping and evaluating better approaches whenever I found one — proving them out in working code and running team workshops (REST/API-first design, modern React and Next.js, OpenRewrite for automated upgrades, Dependabot, and a Spring Cloud Gateway assessment to replace the custom DAT gateway).`,
+    linkedinDescription: `Member of the development team behind SilverDAT "calculate", one of the leading platforms for calculating vehicle repair costs for workshops, insurance companies, manufacturers, banks, and appraisers.
+
+**Responsibilities:**
+* Development and architecture of modern Spring Boot microservices for the gradual replacement of existing Java EE systems
+* Technical co-design of the modernization strategy for a mission-critical enterprise platform
+* Development and optimization of React and TypeScript applications
+* Further development of database architectures and migration of existing systems
+* Setup and optimization of CI/CD processes as well as cloud deployments on Azure Kubernetes Services (AKS)
+* Evaluation of new technologies and conducting technical workshops for the development team
+* Support in architectural decisions and technical concepts
+
+**Selected Achievements:**
+* Successful participation in the transition of a classic SOA landscape to modern microservice architectures
+* Introduction of modern continuous delivery processes for new applications and services
+* Use of AI-supported development processes for the analysis and modernization of complex legacy systems
+* Promotion of architecture standards, API-first approaches, and modern software development within the team`,
     tech: [
       {
         category: 'Backend',
@@ -96,6 +112,21 @@ export const experience: Experience[] = [
 *   Earned the Pega Certified System Architect (CSA) certification in BPM-oriented development and Microsoft 70-480 (HTML5, JavaScript & CSS3, incl. jQuery and AJAX) along the way.
 *   Built Daimler DSS "Digital Sales Solutions" — a greenfield banking application digitizing automobile-credit applications across multiple countries — developing modern Micronaut / JEE 11 microservices (Oracle SQL, PostgreSQL 12, Docker) behind an Angular frontend, with REST/SOAP integration services (OpenAPI) for B2B data exchange.
 *   Owned developer testing and QA (JUnit, SonarQube) and CI/CD to test and integration environments (Git, Jenkins), supported the test team's automated end-to-end suites (Protractor, Cucumber), and delivered in Scrum and then SAFe across frontend, test, and DevOps sub-teams (Jira, Confluence, MS Teams).`,
+    linkedinDescription: `Development of custom software solutions for clients in the insurance, banking, and Microsoft Enterprise Services sectors.
+
+**Responsibilities:**
+* Development and maintenance of mission-critical insurance platforms
+* Participation in digitization and modernization projects in the Microsoft environment
+* Development of modern banking solutions for international automotive financing processes
+* Setup and support of automated test and deployment processes
+* Close collaboration with business departments, test management, and DevOps teams
+* Participation in Scrum and SAFe projects
+
+**Selected Achievements:**
+* Active support in establishing the new "Microsoft Delivery" business area
+* Development of automation and onboarding solutions based on Microsoft technologies
+* Participation in the development of international financing platforms for the automotive industry
+* Introduction and further development of modern development and quality standards`,
     tech: [
       {
         category: 'Backend',
@@ -164,6 +195,18 @@ export const experience: Experience[] = [
     description: `*   Developed and delivered a Liferay 6.0 portal solution, with a Java 6 EE and MySQL backend and a JSP, HTML, CSS, JavaScript, and AlloyUI frontend.
 *   Deployed and tested the applications on Apache Tomcat, ran CI/CD with Jenkins and Maven, and integrated SonarQube into the build process to safeguard code quality.
 *   Delivered in agile Scrum teams (Jira, Confluence), and earned the Oracle Certified Professional Java Programmer (OCPJP) and Oracle Certified Expert Java EE 6 Web Component Developer (OCE WCD) certifications during the role.`,
+    linkedinDescription: `Software developer and consultant for enterprise web applications.
+
+**Responsibilities:**
+* Conception and development of Java-based portal solutions
+* Analysis, implementation, testing, and deployment of applications
+* Working in agile Scrum teams
+* Ensuring software quality and build automation
+
+**Selected Achievements:**
+* Successful implementation of a portal solution project for a major client
+* Introduction of continuous integration and quality processes
+* Acquisition of internationally recognized Oracle certifications`,
     tech: [
       { category: 'Backend', skills: ['Java 6 EE', 'Liferay 6.0', 'JSP'] },
       { category: 'Frontend', skills: ['HTML', 'CSS', 'JavaScript', 'AlloyUI'] },
@@ -190,6 +233,10 @@ export const experience: Experience[] = [
     description: `*   Developed and extended the internal Alpine Test Automation Framework (C#, .NET 4.0) by building automated testing modules for hardware interfaces such as Bluetooth, RDS signal generators, MOST/CAN buses, climate chambers, and CD/DVD changer robots.
 *   Designed and implemented the "Alpine Voltage Curve Editor" — which earned a top 1.0 grade as a final vocational thesis — and modernized the graphical user interfaces of multiple existing test modules using WPF and the MVVM pattern.
 *   Ensured architectural robustness across the test framework by applying UML modeling and design patterns in SharpDevelop.`,
+    linkedinDescription: `* Development of automated test modules for hardware interfaces
+* Implementation of desktop applications with C# and WPF
+* Application of UML and Design Patterns for architectural improvement
+* Final thesis with top grade (1.0)`,
     tech: [
       {
         category: 'Backend',
@@ -418,6 +465,20 @@ I bridge the gap between complex backend logic, intuitive frontend experiences, 
 
 ---
 *Currently seeking a Technical Lead role in Spring Boot and React ecosystems. Open to hybrid opportunities in the Stuttgart area or fully remote positions within Germany.*`,
+  linkedinBio: `Technical Lead and Senior Full-Stack Engineer with over 10 years of experience in the development, modernization, and architecture of mission-critical enterprise applications in the automotive, banking, and insurance sectors.
+
+Comprehensive expertise in designing modern software architectures, transforming legacy systems to microservice platforms, and providing technical leadership for development initiatives. Extensive experience in building scalable backend and frontend solutions using Java, Spring Boot, and React, as well as establishing modern Cloud and DevOps platforms.
+
+Combines technical excellence with pragmatic architectural decisions and supports teams through knowledge transfer, technology evaluation, and the introduction of modern engineering practices.
+
+### CORE COMPETENCIES
+
+#### Technical Leadership
+* Technical leadership of development initiatives and modernization projects
+* Architectural decisions and technology evaluation
+* Conducting technical workshops and knowledge transfer
+* Mentoring and providing technical support to development teams
+* Translating business requirements into viable technical solutions`,
   avatarUrl: '/images/linkedin-profile.png',
   skills: [
     'Java',
