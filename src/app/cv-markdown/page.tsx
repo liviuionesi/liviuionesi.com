@@ -3,7 +3,7 @@ import path from 'node:path';
 import CVMarkdownClient from './CVMarkdownClient';
 
 export const metadata = {
-  title: 'CV - Liviu Ionesi',
+  title: 'CV',
 };
 
 export default async function CVMarkdownPage() {

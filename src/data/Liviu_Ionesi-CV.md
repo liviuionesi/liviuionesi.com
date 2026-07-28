@@ -1,6 +1,6 @@
 # LIVIU IONESI
 
-## Technical Lead | Software Architect | Senior Full-Stack Engineer
+## Technical Lead | Senior Full-Stack-Entwickler
 
 | Kontakt & Adresse                                                                                                                                | Online Profile                                        |
 | :----------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------- |

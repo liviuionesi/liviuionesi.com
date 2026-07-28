@@ -18,6 +18,8 @@ import ATSEducation from '@/components/cv/ats/ATSEducation';
 import ATSLanguages from '@/components/cv/ats/ATSLanguages';
 import ATSCertifications from '@/components/cv/ats/ATSCertifications';
 
+import { usePrintTitle } from '@/hooks/usePrintTitle';
+
 function ATSContent() {
   const { data: session, status } = useSession();
   const searchParams = useSearchParams();
@@ -30,6 +32,8 @@ function ATSContent() {
     langParam === 'ro' || langParam === 'de' || langParam === 'fr' || langParam === 'en'
       ? langParam
       : 'en';
+
+  usePrintTitle('Liviu_Ionesi-CV-ATS' + (language !== 'en' ? `-${language.toUpperCase()}` : ''));
 
   const data = useMemo(() => {
     switch (language) {

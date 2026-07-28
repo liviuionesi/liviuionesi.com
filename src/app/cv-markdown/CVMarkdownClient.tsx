@@ -8,9 +8,13 @@ import '../cv/cv.css';
 
 import remarkGfm from 'remark-gfm';
 
+import { usePrintTitle } from '@/hooks/usePrintTitle';
+
 export default function CVMarkdownClient({ content }: Readonly<{ content: string }>) {
   const { data: session, status } = useSession();
   const { t } = useLanguage();
+
+  usePrintTitle('Liviu_Ionesi-CV');
 
   const isAuthorized = session?.user?.email === process.env.NEXT_PUBLIC_ADMIN_EMAIL;
 

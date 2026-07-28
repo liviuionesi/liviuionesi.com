@@ -19,6 +19,8 @@ import CVProjects from '@/components/cv/visual/CVProjects';
 import CVLanguages from '@/components/cv/visual/CVLanguages';
 import CVCertifications from '@/components/cv/visual/CVCertifications';
 
+import { usePrintTitle } from '@/hooks/usePrintTitle';
+
 function CVContent() {
   const { data: session, status } = useSession();
   const searchParams = useSearchParams();
@@ -36,6 +38,8 @@ function CVContent() {
     langParam === 'ro' || langParam === 'de' || langParam === 'fr' || langParam === 'en'
       ? langParam
       : 'en';
+
+  usePrintTitle('Liviu_Ionesi-CV' + (language !== 'en' ? `-${language.toUpperCase()}` : ''));
 
   // Select Data
   const data = useMemo(() => {
