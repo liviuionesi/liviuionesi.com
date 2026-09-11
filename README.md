@@ -26,7 +26,6 @@ A highly interactive, professional portfolio website designed to mimic the [**An
 - **⚡ High Performance**: Built on Next.js 16 App Router with React Compiler enabled and lazy-loaded Framer Motion for blazing fast load times.
 - **🎭 Immersive Animations**: Powered by Framer Motion for smooth transitions, scroll-linked animations, and interactive hover effects.
 - **🌍 Internationalization**: Built-in multi-language support (English, Romanian, German, French) managed cleanly via React Context.
-- **📄 Printable CVs**: Dedicated `/cv` and `/cv-ats` routes specifically designed to be printed into beautiful visual or ATS-friendly PDF formats.
 - **🔒 Secure & Amazing Contact Form**: A highly interactive contact experience featuring Google Auth, Nodemailer integration, and a geospatial API that calculates the real-time physical distance between the visitor and the office.
 - **🛠️ Best Practices**:
   - **Type Safety**: Strict TypeScript implementation.
