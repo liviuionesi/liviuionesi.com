@@ -19,6 +19,7 @@ import { useTheme } from '@/context/ThemeContext';
 import { useNavigation } from '@/context/NavigationContext';
 import { useLanguage } from '@/context/LanguageContext';
 import { Language } from '@/types/context';
+import { isAdminEmail } from '@/lib/adminAccess';
 
 interface SidebarProps {
   activeView: 'explorer' | 'search' | 'github' | 'linkedin' | 'contact' | 'cv-config' | null;
@@ -72,7 +73,11 @@ export default function Sidebar({
     }
   };
 
-  const isAuthorized = session?.user?.email === process.env.NEXT_PUBLIC_ADMIN_EMAIL;
+  // Only decides whether to show the CV button. The pages themselves are gated
+  // on the server (see `src/lib/admin.ts`). `isAdminEmail` is used instead of a
+  // direct comparison because that would be `true` when both sides are
+  // undefined, i.e. when the admin e-mail address is not configured.
+  const isAuthorized = isAdminEmail(session?.user?.email, process.env.NEXT_PUBLIC_ADMIN_EMAIL);
 
   return (
     <>

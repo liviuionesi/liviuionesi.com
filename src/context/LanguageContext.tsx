@@ -177,6 +177,7 @@ export const translations: Record<Language, Record<string, string>> = {
     pageProtected: 'This page is protected.',
     loginRequired:
       'You must log in successfully with the authorized administrator account to view this page.',
+    signInWithGoogle: 'Sign in with Google',
   },
   de: {
     getInTouch: 'Kontakt aufnehmen',
@@ -338,6 +339,7 @@ export const translations: Record<Language, Record<string, string>> = {
     pageProtected: 'Diese Seite ist geschützt.',
     loginRequired:
       'Sie müssen sich erfolgreich mit dem autorisierten Administratorkonto anmelden, um diese Seite anzuzeigen.',
+    signInWithGoogle: 'Mit Google anmelden',
   },
   ro: {
     getInTouch: 'Contactează-mă',
@@ -497,6 +499,7 @@ export const translations: Record<Language, Record<string, string>> = {
     pageProtected: 'Această pagină este protejată.',
     loginRequired:
       'Trebuie să vă autentificați cu contul de administrator autorizat pentru a vizualiza această pagină.',
+    signInWithGoogle: 'Conectați-vă cu Google',
   },
   fr: {
     getInTouch: 'Contactez-moi',
@@ -655,6 +658,7 @@ export const translations: Record<Language, Record<string, string>> = {
     pageProtected: 'Cette page est protégée.',
     loginRequired:
       'Vous devez vous connecter avec le compte administrateur autorisé pour voir cette page.',
+    signInWithGoogle: 'Se connecter avec Google',
   },
 };
 
