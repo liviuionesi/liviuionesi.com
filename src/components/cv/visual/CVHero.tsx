@@ -120,12 +120,12 @@ export default function CVHero({
             <div className="flex items-center gap-2">
               <FaLinkedin size={14} className="text-blue-500" title="LinkedIn" />
               <a
-                href="https://linkedin.com/in/liviu-ionesi"
+                href="https://linkedin.com/in/liviuionesi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whitespace-nowrap text-gray-600 hover:text-blue-600 hover:underline"
               >
-                linkedin.com/in/liviu-ionesi
+                linkedin.com/in/liviuionesi
               </a>
             </div>
             <div className="flex items-center gap-2">

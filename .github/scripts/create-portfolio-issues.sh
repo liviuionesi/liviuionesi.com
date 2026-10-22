@@ -56,7 +56,7 @@ echo -e "${GREEN}✓ Labels created${NC}"
 echo ""
 
 PROJECT_NUMBER=6
-PROJECT_OWNER="pehlivanu"
+PROJECT_OWNER="liviuionesi"
 
 # Helper function to create issue and add to project
 create_issue() {
@@ -73,7 +73,7 @@ create_issue() {
 }
 
 PROJECT_NUMBER=6
-PROJECT_OWNER="pehlivanu"
+PROJECT_OWNER="liviuionesi"
 
 # Helper function to create issue and add to project
 create_issue() {

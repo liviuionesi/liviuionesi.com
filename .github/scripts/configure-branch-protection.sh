@@ -4,7 +4,7 @@
 
 set -e
 
-REPO="pehlivanu/portfolio-site"
+REPO="liviuionesi/liviuionesi.com"
 
 echo "🔒 Configuring branch protection rules for $REPO..."
 

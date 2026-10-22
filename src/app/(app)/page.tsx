@@ -33,7 +33,7 @@ export default function Home() {
     },
     sameAs: [
       'https://github.com/liviuionesi',
-      'https://linkedin.com/in/liviu-ionesi',
+      'https://linkedin.com/in/liviuionesi',
       'https://www.xing.com/profile/Liviu_Ionesi/web_profile',
     ],
   };

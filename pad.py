@@ -2,7 +2,7 @@ import re
 
 content = """[Freiwaldaustr. 39, 73230 Kirchheim unter Teck](https://www.google.com/maps/search/?api=1&query=Freiwaldaustr.+39%2C+73230+Kirchheim+unter+Teck) | [www.liviuionesi.com](https://www.liviuionesi.com)  
 [+49 1514 6966832](tel:+4915146966832) | [ionesiliviu@yahoo.com](mailto:ionesiliviu@yahoo.com)  
-[linkedin.com/in/liviu-ionesi](https://www.linkedin.com/in/liviu-ionesi) | [github.com/pehlivanu](https://github.com/pehlivanu)"""
+[linkedin.com/in/liviuionesi](https://www.linkedin.com/in/liviuionesi) | [github.com/liviuionesi](https://github.com/liviuionesi)"""
 
 lines = content.split('\n')
 nbsp = '\u00A0'
@@ -28,7 +28,7 @@ with open('Liviu_Ionesi-CV.md', 'r', encoding='utf-8') as f:
 # Replace the specific block
 old_block = """[Freiwaldaustr. 39, 73230 Kirchheim unter Teck](https://www.google.com/maps/search/?api=1&query=Freiwaldaustr.+39%2C+73230+Kirchheim+unter+Teck) • [www.liviuionesi.com](https://www.liviuionesi.com)  
 [+49 1514 6966832](tel:+4915146966832) • [ionesiliviu@yahoo.com](mailto:ionesiliviu@yahoo.com)  
-[linkedin.com/in/liviu-ionesi](https://www.linkedin.com/in/liviu-ionesi) • [github.com/pehlivanu](https://github.com/pehlivanu)"""
+[linkedin.com/in/liviuionesi](https://www.linkedin.com/in/liviuionesi) • [github.com/liviuionesi](https://github.com/liviuionesi)"""
 
 if old_block in cv:
     cv = cv.replace(old_block, new_content)

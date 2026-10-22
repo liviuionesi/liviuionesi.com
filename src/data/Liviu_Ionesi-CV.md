@@ -6,7 +6,7 @@
 | :----------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
 | [Freiwaldaustr. 39, 73230 Kirchheim unter Teck](https://www.google.com/maps/search/?api=1&query=Freiwaldaustr.+39%2C+73230+Kirchheim+unter+Teck) | [www.liviuionesi.com](https://www.liviuionesi.com)       |
 | [+49 1514 6966832](tel:+4915146966832)                                                                                                           | [ionesiliviu@yahoo.com](mailto:ionesiliviu@yahoo.com)    |
-| [linkedin.com/in/liviu-ionesi](https://www.linkedin.com/in/liviu-ionesi)                                                                         | [github.com/liviuionesi](https://github.com/liviuionesi) |
+| [linkedin.com/in/liviuionesi](https://www.linkedin.com/in/liviuionesi)                                                                           | [github.com/liviuionesi](https://github.com/liviuionesi) |
 
 ## KURZPROFIL
 

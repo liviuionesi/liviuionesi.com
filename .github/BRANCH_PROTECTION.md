@@ -4,21 +4,24 @@
 
 ⚠️ **Branch protection requires GitHub Pro or public repository**
 
-The repository is currently private and on GitHub Free tier, which doesn't support branch protection rules. 
+The repository is currently private and on GitHub Free tier, which doesn't support branch protection rules.
 
 ## Options
 
 ### Option 1: Make Repository Public
+
 ```bash
-gh repo edit pehlivanu/portfolio-site --visibility public
+gh repo edit liviuionesi/liviuionesi.com --visibility public
 ```
 
 Then run:
+
 ```bash
 ./.github/scripts/configure-branch-protection.sh
 ```
 
 ### Option 2: Upgrade to GitHub Pro
+
 - Go to repository Settings → Options → Danger Zone
 - Upgrade to GitHub Pro ($4/month for individuals)
 
@@ -53,6 +56,7 @@ Once branch protection is available, configure the following for `main` branch:
 #### Protection Rules for `develop` (if created):
 
 Same as main, but:
+
 - Required approving reviews: 1
 - Enforce admins: No (more flexibility for development)
 
@@ -65,6 +69,7 @@ The repository includes a script to automatically configure branch protection:
 ```
 
 This script will:
+
 - Configure protection for `main` branch
 - Configure protection for `develop` branch (if it exists)
 - Set up required status checks
@@ -102,10 +107,9 @@ Since branch protection isn't available, follow these manual practices:
 ## Verification
 
 After branch protection is configured, verify at:
-https://github.com/pehlivanu/portfolio-site/settings/branches
+https://github.com/liviuionesi/liviuionesi.com/settings/branches
 
 ## References
 
 - [GitHub Branch Protection Documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
 - [GitHub Pricing](https://github.com/pricing)
-

@@ -82,12 +82,12 @@ export default function ATSHeader({
           <p>
             {t('linkedin')}:{' '}
             <a
-              href="https://linkedin.com/in/liviu-ionesi"
+              href="https://linkedin.com/in/liviuionesi"
               target="_blank"
               rel="noopener noreferrer"
               className="whitespace-nowrap hover:text-blue-600 hover:underline"
             >
-              linkedin.com/in/liviu-ionesi
+              linkedin.com/in/liviuionesi
             </a>
             {' | '}
             {t('github')}:{' '}
