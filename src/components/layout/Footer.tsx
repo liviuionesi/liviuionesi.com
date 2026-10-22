@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Footer() {
   const [techIndex, setTechIndex] = useState(0);
@@ -29,6 +30,14 @@ export default function Footer() {
       <p className={`transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         {technologies[techIndex]}
       </p>
+      <nav aria-label="Legal" className="mt-3 flex justify-center gap-6">
+        <Link href="/impressum" className="hover:underline">
+          Impressum
+        </Link>
+        <Link href="/datenschutz" className="hover:underline">
+          Datenschutz
+        </Link>
+      </nav>
     </footer>
   );
 }

@@ -1,5 +1,5 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from 'next';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://liviuionesi.com';
 
@@ -10,5 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 1,
     },
-  ]
+    { url: `${baseUrl}/impressum`, changeFrequency: 'yearly', priority: 0.2 },
+    { url: `${baseUrl}/datenschutz`, changeFrequency: 'yearly', priority: 0.2 },
+  ];
 }
