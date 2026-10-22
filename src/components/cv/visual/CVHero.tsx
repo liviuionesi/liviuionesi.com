@@ -131,12 +131,12 @@ export default function CVHero({
             <div className="flex items-center gap-2">
               <FaGithub size={14} className="text-blue-500" title="GitHub" />
               <a
-                href="https://github.com/pehlivanu"
+                href="https://github.com/liviuionesi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whitespace-nowrap text-gray-600 hover:text-blue-600 hover:underline"
               >
-                github.com/pehlivanu
+                github.com/liviuionesi
               </a>
             </div>
           </div>

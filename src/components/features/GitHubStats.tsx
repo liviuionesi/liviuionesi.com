@@ -9,13 +9,19 @@ import { useLanguage } from '@/context/LanguageContext';
 
 import { GitHubProfile } from '@/types/api';
 
+/**
+ * Contributions in the last year, as shown on the GitHub profile (checked 2026-10-22).
+ * GitHub's public API does not return this number, so it is set by hand.
+ */
+const CONTRIBUTIONS_LAST_YEAR = 2869;
+
 export default function GitHubStats({ onClose }: { onClose?: () => void }) {
   const { t } = useLanguage();
   const [profile, setProfile] = useState<GitHubProfile | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('https://api.github.com/users/pehlivanu')
+    fetch('https://api.github.com/users/liviuionesi')
       .then((res) => res.json())
       .then((data) => {
         setProfile(data);
@@ -114,7 +120,9 @@ export default function GitHubStats({ onClose }: { onClose?: () => void }) {
                 size={20}
                 className="mx-auto mb-2 text-green-400 [.light-theme_&]:text-green-700"
               />
-              <div className="text-ide-text-active text-xl font-bold">235</div>
+              <div className="text-ide-text-active text-xl font-bold">
+                {CONTRIBUTIONS_LAST_YEAR.toLocaleString('en-US')}
+              </div>
               <div className="text-xs text-gray-500 [.light-theme_&]:text-gray-600">
                 {t('contributions')}
               </div>

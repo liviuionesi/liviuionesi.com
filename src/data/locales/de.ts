@@ -11,15 +11,14 @@ export const experience: Experience[] = [
     locationType: 'Remote / Hybrid',
     websiteUrl: 'https://www.dat.eu',
     period: 'Sep 2020 - Mär 2026',
-    summary: `Senior Full-Stack-Entwickler im "Costing Applications"-Team hinter SilverDAT 3 "calculate", dem von Versicherern anerkannten Standard zur Kalkulation von Fahrzeugreparaturkosten. Die Anwendung wird branchenweit von Werkstätten, Händlern, Gutachtern, Versicherungen, Banken und Herstellern für über 70.000 Fahrzeugvarianten genutzt.`,
-    description: `*   Wartung, Erweiterung und Testen von Legacy-Java-EE-Diensten (SOA/SOAP Monorepo mit JavaScript/React-Frontends). Anpassung von SoapUI und manuellen Testsuiten an veränderte Services sowie Integration von TestNG/Mockito zur Abdeckung neuer Änderungen.
-*   Architektur und ganzheitliche Entwicklung neuer Spring Boot-Dienste zur Ablösung der Java-EE-Altsysteme — mit sauberer N-Tier-Architektur, striktem DTO-Mapping, zentraler Fehlerbehandlung und MDC-basiertem Distributed Tracing. Bereitstellung von contract-first, HATEOAS-konformen REST-APIs (OpenAPI), abgesichert durch JUnit 5/MockMvc-Integrationstests und automatisierte Postman-Collections.
-*   Verwaltung der Datenschicht mit JPA/Hibernate: Ablösung der veralteten SQL-Datenbanken (hauptsächlich Oracle SQL) durch PostgreSQL und Einführung von MongoDB als erste NoSQL-Lösung im ehemals rein SQL-basierten Stack.
-*   Modernisierung der Legacy-JavaScript-Frontends durch responsive React/TypeScript-Komponenten. Architektur-Optimierung mittels Effector (State Management) und PrimeReact.
-*   CI/CD: Build der Legacy-Plattform via Gradle auf Jenkins mit Deployment in Test- und Produktionsumgebungen; neue Services werden über den Gradle Wrapper ausgeliefert. Bereitstellung auf Azure Kubernetes (AKS) via Build- und Release-Pipelines mit Helm Charts und NGINX Ingress. Docker Compose für die lokale Entwicklung. Migration der Quellcodeverwaltung von GitLab zu Azure Repos. Die Legacy-Anwendung läuft in einem 6-Release-Zyklus pro Jahr (Kanban in Jira), während die neuen Services auf Continuous Delivery umgestellt wurden.
-*   Modernisierung des geerbten Spring-Boot-Parent-Builds (Einsatz von OpenRewrite für automatisierte Versionsupgrades jenseits des BOM-Limits, Renovate Bot auf Azure für Abhängigkeitsupdates) und Verlagerung der konventionellen Properties-Konfiguration hin zu Spring Profiles.
-*   Implementierung eines KI-gestützten Workflows über IntelliJ IDEA (CodeGPT mit lokalem Azure LLM), Cursor und Windsurf zur Dokumentation und Analyse des Legacy-Codes, Extraktion von Anforderungen und Entwicklung neuer Services, die den SonarQube-Quality-Gates zu 100 % entsprechen.
-*   Maßgebliche Mitgestaltung der technischen Ausrichtung durch Prototyping und Evaluierung neuer Lösungsansätze — Verifizierung direkt im Code sowie Durchführung von Team-Workshops (z. B. REST/API-first Design, modernes React und Next.js, OpenRewrite, Dependabot und Evaluierung von Spring Cloud Gateway als Ersatz für das DAT-eigene Gateway).`,
+    summary: `Branchenführender Anbieter von Fahrzeugdaten & Reparatursystemen. Entwickler im Kern-Team von SilverDAT 3 „calculate“ (Plattform zur Reparaturkostenkalkulation für über 70.000 Fahrzeugvarianten für Werkstätten, Versicherer, Banken, OEMs & Gutachter).`,
+    description: `*   **Modernisierungsarchitektur (Projekt Renovatio):** Technische Mitgestaltung der schrittweisen Entflechtung des monolithischen Java-EE/SOA-Kernsystems in hochverfügbare Spring-Boot-Microservices mit sauberer N-Tier-Architektur, DTO-Mappings und zentralem Distributed Tracing (MDC) in einem 10-köpfigen Team.
+*   **REST & Contract-First API Design:** Konzeption und Entwicklung HATEOAS-konformer REST-APIs (OpenAPI Standard), abgesichert durch Testcontainers, MockMvc-Integrationstests und automatisierte Postman-Collections.
+*   **Polyglot Persistence & Migration:** Migration gewachsener relationaler Datenbanken (Oracle SQL) auf PostgreSQL (JPA/Hibernate) sowie erfolgreiche Einführung von MongoDB für dynamische Fahrzeughistorien und Kalkulationsdokumente.
+*   **Frontend-Transformation & Cloud Deployment:** Ablösung veralteter Web-Oberflächen durch responsive React/TypeScript-Komponenten (Effector, PrimeReact); Bereitstellung auf Azure Kubernetes Service (AKS) via Helm Charts und NGINX Ingress.
+*   **Continuous Delivery & Release-Beschleunigung:** Umstellung der Deployment-Prozesse von 6 starren Jahres-Releases auf Continuous Delivery für alle neuen Microservices bei 100 % SonarQube Quality Gates und verbindlichen TDD-Qualitätsstandards im gesamten Team.
+*   **Toolchain-Modernisierung & KI-Workflows:** Modernisierung von Spring-Boot-Builds mit OpenRewrite und Renovate; datenschutzkonformer Einsatz von CodeGPT (an internem Azure-LLM) sowie Cursor und Windsurf zur beschleunigten Legacy-Code-Analyse und Extraktion von Geschäftslogik.
+*   **Technical Leadership & Enablement:** Evaluierung zukunftsweisender Technologien (Spring Cloud Gateway) und Durchführung interner Workshops für das Team zu REST/API-First, React/TypeScript und automatisierten Framework-Upgrades.`,
     linkedinDescription: `Mitglied des Entwicklungsteams hinter SilverDAT „calculate“, einer der führenden Plattformen zur Kalkulation von Fahrzeugreparaturkosten für Werkstätten, Versicherungen, Hersteller, Banken und Sachverständige.
 
 **Verantwortlichkeiten:**
@@ -106,12 +105,13 @@ export const experience: Experience[] = [
     locationType: 'Vor Ort',
     websiteUrl: 'https://www.evia.de',
     period: 'Feb 2016 - Aug 2020',
-    summary: `Entwickler und Consultant in einem branchenübergreifenden IT-Systemhaus zur Bereitstellung von Individual- und Standardsoftware im Banken-, Versicherungs- und Microsoft-Enterprise-Umfeld. Tätigkeit in agilen Scrum- und SAFe-Teams — von der Wartung älterer Java EE-Systeme bis hin zur Neuentwicklung einer Microservices-Architektur auf der grünen Wiese.`,
-    description: `*   Wartung, Erweiterung, Bereitstellung und Testen von Versicherungsmakler-Portalen für Wüstenrot & Württembergische — geschäftskritische Java EE 8-Anwendungen (JSF/Spring/Hibernate, JSP) auf IBM WebSphere 7 und 8.5 mit IBM DB2 und LDAP/Active Directory. Diese bildeten das stabile finanzielle Fundament für das Wachstum des Unternehmens von ~16 auf über 200 Mitarbeiter. Die Systeme wurden mittels Penetrationstests (OWASP-Standards) gehärtet. Zur Dokumenten- und PDF-Generierung kamen Rational Application Developer 9.1 und iText zum Einsatz (weitere Tools: Apache Directory Studio, Postman, Eclipse, SVN, Cherwell).
-*   Unterstützung beim Aufbau des neuen Bereichs "Microsoft Delivery" als primärer Entwickler. Entwicklung einer Onboarding-Lösung für Mitarbeiter in SharePoint Online (digitale Vertragserstellung, Onboarding-Prozess, Aufgabenmanagement) sowie Automatisierung von Unternehmensprozessen mit Microsoft Flow und Logic Apps (Office 365, JSON).
-*   Erwerb der Zertifizierungen "Pega Certified System Architect (CSA)" für BPM-orientierte Entwicklung und "Microsoft 70-480" (HTML5, JavaScript & CSS3, inkl. jQuery und AJAX).
-*   Entwicklung der "Digital Sales Solutions" (DSS) für Daimler — eine neu konzipierte Banking-Anwendung zur Digitalisierung von Automobilkreditanträgen in mehreren Ländern. Implementierung moderner Micronaut / JEE 11 Microservices (Oracle SQL, PostgreSQL 12, Docker) hinter einem Angular-Frontend, unterstützt durch REST/SOAP-Integrationsdienste (OpenAPI) für den B2B-Datenaustausch.
-*   Zuständig für Developer Testing, QA (JUnit, SonarQube) und CI/CD-Pipelines für Test- und Integrationsumgebungen (Git, Jenkins). Unterstützung des Test-Teams bei automatisierten End-to-End-Tests (Protractor, Cucumber) in Scrum- und später SAFe-Teams in enger Abstimmung mit Frontend-, Test- und DevOps-Abteilungen (Jira, Confluence, MS Teams).`,
+    summary: `IT-Systemhaus für Individual- und Standardsoftware im Banken-, Versicherungs- und Microsoft-Enterprise-Umfeld.`,
+    description: `*   **Versicherungsplattform Webkis (Wüstenrot & Württembergische):** Wartung, Weiterentwicklung und Testen geschäftskritischer Maklerportale auf Basis von Java EE 8, JSF, Spring, Hibernate und JSP unter IBM WebSphere 7/8.5 mit IBM DB2 und LDAP-Anbindung; Durchführung von OWASP-Penetrationstests und automatisierter PDF-Generierung via RAD 9.1 und iText.
+*   **Modernisierungsevaluation & Pega Integration:** Architektonische Konzeption und Evaluierung von Pega 7 als moderner BPM- und Ablöseplattform für Altsysteme sowie Erwerb der Zertifizierung als Pega Certified System Architect (CSA).
+*   **Automotive Banking (Daimler DSS):** Entwicklung der „Digital Sales Solutions“ zur globalen Digitalisierung von Fahrzeugfinanzierungsanträgen; Implementierung von Micronaut / Java EE Microservices (Oracle SQL, PostgreSQL 12, Docker) mit REST/SOAP-Schnittstellen und Angular-Frontends.
+*   **Enterprise Process Automation (Microsoft Delivery):** Entwicklung einer SharePoint Online Onboarding-Plattform für Mitarbeiter sowie Prozessautomatisierung mit Microsoft Flow und Logic Apps (Office 365, JSON).
+*   **Quality Assurance & CI/CD:** Aufbau automatisierter Build- und Test-Pipelines mit Jenkins, Git, JUnit und SonarQube sowie E2E-Testautomatisierung (Protractor, Cucumber) in agilen Scrum- und SAFe-Frameworks; wichtiger Beitrag zum Firmenwachstum von ~16 auf >200 Mitarbeiter.
+*   **Zertifizierungen:** Erwerb der Zertifizierungen als Pega Certified System Architect (CSA) und Microsoft Certified (Exam 70-480).`,
     linkedinDescription: `Entwicklung individueller Softwarelösungen für Kunden aus den Bereichen Versicherungen, Banking und Microsoft Enterprise Services.
 
 **Verantwortlichkeiten:**
@@ -191,10 +191,10 @@ export const experience: Experience[] = [
     locationType: 'Vor Ort / Reisebereitschaft',
     websiteUrl: 'https://www.prodyna.com',
     period: 'Nov 2014 - Jan 2016',
-    summary: `Entwickler und Consultant in einer IT-Beratung, mit Einsatz vor Ort bei einem Großkunden zur Umsetzung eines Portal-Projekts von der fachlichen Beratung über das Design bis hin zur Implementierung und zum Testen.`,
-    description: `*   Entwicklung und Bereitstellung einer Liferay 6.0-Portallösung mit einem Backend in Java 6 EE und MySQL sowie einem Frontend aus JSP, HTML, CSS, JavaScript und AlloyUI.
-*   Deployment und Testen der Anwendungen auf Apache Tomcat, Steuerung der CI/CD-Prozesse mittels Jenkins und Maven sowie Integration von SonarQube in den Build-Prozess zur Sicherstellung der Codequalität.
-*   Arbeit in agilen Scrum-Teams (Jira, Confluence) und Erwerb der Zertifizierungen "Oracle Certified Professional Java Programmer (OCPJP)" sowie "Oracle Certified Expert Java EE 6 Web Component Developer (OCE WCD)".`,
+    summary: `Schweizerisch-deutsche IT-Beratung für Enterprise-Webanwendungen.`,
+    description: `*   **Enterprise-Portalentwicklung:** Konzeption und Entwicklung kundenspezifischer Portallösungen auf Basis von Liferay 6.0, Java EE, MySQL, JSP, HTML, CSS, JavaScript und AlloyUI im agilen Scrum-Team beim Großkunden.
+*   **Deployment & Build-Management:** Konfiguration und Deployment auf Apache Tomcat sowie Aufbau standardisierter Maven-Build-Prozesse und CI-Pipelines mit Jenkins.
+*   **Qualitätssicherung & Zertifizierungen:** Integration statischer Code-Analysen mit SonarQube und Etablierung automatisierter Komponententests mit JUnit; termingerechter Projektabschluss und Erwerb der Hersteller-Zertifizierungen Oracle Certified Professional (OCPJP) und Oracle Certified Expert (OCE WCD).`,
     linkedinDescription: `Softwareentwickler und Berater für Enterprise-Webanwendungen.
 
 **Verantwortlichkeiten:**
@@ -229,10 +229,9 @@ export const experience: Experience[] = [
     websiteUrl: 'https://www.alpine.de/',
     dualStudy: 'ADV Böblingen',
     period: 'Sep 2012 - Aug 2013',
-    summary: `Praktikant im Bereich Systemintegration (Car Infotainment / OEM) zur Entwicklung von Softwaremodulen für das interne "Alpine Test Automation Framework".`,
-    description: `*   Entwicklung und Erweiterung des internen Alpine Test Automation Frameworks (C#, .NET 4.0) durch den Bau automatisierter Testmodule für Hardwareschnittstellen wie Bluetooth, RDS-Signalgeneratoren, MOST/CAN-Busse, Klimakammern und CD/DVD-Wechsler-Roboter.
-*   Design und Implementierung des "Alpine Voltage Curve Editor" — der als Abschlussarbeit mit der Bestnote (1,0) bewertet wurde — sowie Modernisierung der Benutzeroberflächen mehrerer bestehender Testmodule mittels WPF und dem MVVM-Pattern.
-*   Sicherstellung der architektonischen Robustheit über das gesamte Test-Framework hinweg durch Anwendung von UML-Modellierung und Gang-of-Four Design Patterns (Singleton, Composite, Factory Method, Memento) in SharpDevelop.`,
+    summary: `F&E-Zentrum für Automotive-Infotainment-, Navigations- und Bussysteme (im Rahmen der Ausbildung an der ADV Böblingen, Abschluss 09/2014).`,
+    description: `*   **Automatisierte Testmodule:** Konzeption und Implementierung automatisierter Software-Testmodule für fahrzeugspezifische Hardwareschnittstellen (Bluetooth, RDS, CAN- und MOST-Bussysteme) in C# / .NET 4.0 mit WPF und MVVM-Architektur.
+*   **Messdaten-Visualisierung & Abschlussarbeit:** Eigenverantwortliche Entwicklung eines grafischen Editors zur Analyse, Validierung und Aufbereitung von Bordnetz-Spannungskurven unter automobilen Testbedingungen; Auszeichnung der Abschlussarbeit **„Alpine Voltage Curve Editor“ mit der Bestnote 1,0 (sehr gut)**.`,
     linkedinDescription: `* Entwicklung automatisierter Testmodule für Hardwareschnittstellen
 * Umsetzung von Desktop-Anwendungen mit C# und WPF
 * Anwendung von UML und Design-Patterns zur Architekturverbesserung
@@ -305,164 +304,93 @@ export const education: Education[] = [
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Filmpire Microservices Platform',
+    title: 'liviuionesi.com',
     description:
-      'Eine ganzheitliche Enterprise-Microservices-Plattform zur Entdeckung von Filmen, von der ersten Idee bis zum einsatzbereiten Produkt über GitHub Project Kanban-Boards (Epics, Stories, Tasks) gesteuert. Acht unabhängige Java 25 / Spring Boot 3.5 Services inklusive Spring Cloud (Eureka, API Gateway), unterstützt durch eine hybride PostgreSQL/MongoDB-Strategie und einen Redis-Cache mit Fallback auf die TMDB API. Integriert Spring AI (Whisper/GPT-4) sowohl über REST als auch gRPC. Nach strikten modernen Standards entwickelt — Record-DTOs, Constructor Injection, Virtual Threads — und mit hohen Qualitätsanforderungen (JUnit 5, Testcontainers, 85% JaCoCo Coverage) über GitHub Actions CI/CD abgesichert. Deployment via Kubernetes auf Minikube.',
+      'Diese Portfolio-Website. Sie sieht aus wie die Antigravity IDE, mit Activity Bar, Datei-Explorer, Suchpanel, Statusleiste und Command Palette. Sie läuft auf dem Next.js 16 App Router mit dem React Compiler. Sie hat 4 Sprachen (Englisch, Deutsch, Französisch, Rumänisch) und einen CV-Export als PDF. Das Kontaktformular nutzt Google-Anmeldung und Nodemailer und zeigt mit der Geolocation API die Entfernung zwischen Besucher und Büro. Unit-Tests decken etwa 97 % des Codes ab, und Husky, ESLint und Prettier prüfen jeden Commit. Die Seite erreicht in allen vier Lighthouse-Kategorien 100 Punkte.',
     tech: [
-      'Java 25',
-      'Spring Boot 3.5',
-      'Spring Cloud',
-      'PostgreSQL',
-      'MongoDB',
-      'Redis',
-      'Spring AI',
-      'gRPC',
-      'REST',
-      'JUnit 5',
-      'Testcontainers',
-      'JaCoCo',
-      'GitHub Actions',
-      'Docker',
-      'Podman',
-      'Kubernetes',
+      'Next.js 16',
+      'React Compiler',
+      'TypeScript',
+      'Tailwind CSS v4',
+      'Framer Motion',
+      'NextAuth.js',
+      'Jest',
+      'Vercel',
     ],
-    githubUrl: 'https://github.com/pehlivanu/filmpire-microservices',
-    deployUrl: '',
+    githubUrl: 'https://github.com/liviuionesi/liviuionesi.com',
+    deployUrl: 'https://liviuionesi.com',
   },
   {
     id: 2,
-    title: 'Defense Asset Manager',
+    title: 'brevier.dev',
     description:
-      'Eine React 19 Enterprise-Anwendung für das Asset- und Personalmanagement im Verteidigungssektor. Setzt auf eine strikte Feature-basierte (Domain-Driven) Architektur, um eine SAFe-Bereitstellung über mehrere Teams hinweg zu unterstützen. Vollständig typisiert, Contract-First gegen OpenAPI 3.1 und auf Basis von Vite für sofortiges HMR. Verwendet Zustand mit Immer für Immutable State, Mock Service Worker für Offline-REST-Mocking sowie barrierefreie Material UI v9-Komponenten mit sicherheitskritischer UX (z. B. Bestätigungen bei destruktiven Aktionen).',
-    tech: [
-      'React 19',
-      'Vite',
-      'Zustand',
-      'Material UI v9',
-      'MSW',
-      'OpenAPI 3.1',
-      'TypeScript',
-      'Vitest',
-    ],
-    githubUrl: 'https://github.com/pehlivanu/defense-asset-manager',
-    deployUrl: '',
+      'Die Website und Dokumentation von Brevier, einer PDF-Bibliothek nach der Formel HTML + CSS + JSON = PDF. Brevier hat Clients für Python, C#, TypeScript und Java und unterstützt deutsche Geschäftsdokumente: DIN 5008, Silbentrennung, mehrseitige Tabellen und E-Rechnungen (ZUGFeRD / Factur-X). Die Seite ist mit Nuxt 4 gebaut und als statisches HTML vorgerendert. Sie liefert im Produktivbetrieb keine Framework-Skripte aus, nutzt keine Cookies und kein Tracking und ist auf Englisch und Deutsch verfügbar. Sie erreicht in allen vier Lighthouse-Kategorien 100 Punkte.',
+    tech: ['Nuxt 4', 'TypeScript', 'Vitest', 'Playwright', 'i18n (EN/DE)', 'Static prerendering'],
+    githubUrl: '',
+    deployUrl: 'https://www.brevier.dev',
   },
   {
     id: 3,
-    title: 'Antigravity IDE Portfolio',
+    title: 'karcher.liviuionesi.com',
     description:
-      'Ein hochgradig interaktives Entwickler-Portfolio, das die Ästhetik der Google Antigravity IDE detailliert nachbildet — mit Activity Bar, Datei-Explorer, Editorbereich, Statusleiste und einer funktionierenden Command Palette. Basiert auf dem Next.js 15 App Router mit immersiven Framer Motion Mikro-Animationen. Bietet eine automatisierte PDF-Generierung des Lebenslaufs in mehreren Vorlagen und Sprachen sowie ein dynamisches Kontaktformular, das via Geolocation API die physische Entfernung zwischen dem Besucher und dem Entwickler berechnet.',
+      'Meine Lösung für eine Software-Architekt-Challenge von Kärcher: ein System für 1.000 Roboter und 100 Bediener. Teil 1 ist das Design für AWS (IoT Core, Kinesis, Valkey, EKS, Cognito, Terraform), als arc42-Dokument mit einem ADR für jede Entscheidung. Teil 2 ist ein lauffähiger Prototyp: ein MQTT-Broker mit TLS und einem Login pro Roboter, ein Python-Backend, ein Next.js-Dashboard und eine Android-App (Capacitor). Ein einziger docker-compose-Befehl startet alles. Die Demo ist mit simulierten Robotern live. Der Quellcode ist privat.',
     tech: [
-      'Next.js 15',
-      'TypeScript',
-      'Tailwind CSS',
-      'Geolocation API',
-      'PDF Generation',
-      'Framer Motion',
+      'Python',
+      'MQTT (Mosquitto)',
+      'Next.js',
+      'Capacitor (Android)',
+      'InfluxDB',
+      'Docker Compose',
+      'Terraform',
+      'AWS',
+      'Playwright',
     ],
-    githubUrl: 'https://github.com/pehlivanu/portfolio-site',
-    deployUrl: 'https://www.liviuionesi.com',
+    githubUrl: '',
+    deployUrl: 'https://karcher.liviuionesi.com',
   },
   {
     id: 4,
-    title: 'Filmpire Frontend',
+    title: 'lmdb.dev',
     description:
-      'Eine moderne, interaktive React 17-Anwendung für die Film-Suche, verwaltet mit Redux Toolkit. Dient als dedizierter Frontend-Client für das 8-Service Filmpire Microservices-Backend. Integriert die TMDB API zum Durchsuchen von Kategorien und Verwalten von Favoriten. Ein besonderes Highlight ist die Alan AI SDK-Integration, die eine vollständig konversationelle Sprachsteuerung ermöglicht. Qualitätssicherung durch Jest / React Testing Library und ESLint (Airbnb-Standard).',
-    tech: ['React 17', 'Material-UI', 'Redux Toolkit', 'Alan AI'],
-    githubUrl: 'https://github.com/pehlivanu/filmpire',
-    deployUrl: 'https://filmpire-ten.vercel.app/',
-  },
-  /*
-  {
-    id: 5,
-    title: "Knowledge Base Platform",
-    description:
-      "Ein lokalisierungsfähiges Dokumentationssystem im Enterprise-Format, basierend auf Next.js 16 und React 19 Server Components für minimale Client-Ladezeiten. Es fungiert als Static Site Generator, der eine einfache Sammlung von Markdown-Dateien (.md) in ein vollständiges Wiki verwandelt. Bietet tiefgehende Internationalisierung über next-intl mittels Edge-Middleware, wobei interne Dokumente durch eine Edge-Middleware-Überprüfung von HttpOnly-Cookies abgesichert sind.",
-    tech: ["Next.js 16", "React 19", "Tailwind CSS v4", "next-intl", "Markdown"],
-    githubUrl: "https://github.com/pehlivanu/knowledge-base-platform",
-    deployUrl: "https://phenix-wiki.vercel.app",
-  },
-*/
-  {
-    id: 6,
-    title: 'DevOps Toolchain Showcase',
-    description:
-      'Eine vollständig containerisierte CI/CD-Toolchain, die Enterprise-DevOps-Praktiken demonstriert und über Podman Compose orchestriert wird. Ein angepasster Jenkins-Server nutzt Docker-outside-of-Docker (DooD), um Applikationsimages über ein mehrstufiges Jenkinsfile zu bauen und zu pushen. Automatisiert das JaCoCo-Coverage-Reporting sowie das Artefakt-Publishing an JFrog Artifactory. Eigene Bash-, curl- und jq-Skripte übertragen Test-Metriken per REST-API an externe ALM/MQC-Systeme.',
-    tech: ['Jenkins', 'JFrog Artifactory', 'Podman', 'Gradle', 'Java 17'],
-    githubUrl: 'https://github.com/pehlivanu/devops-toolchain-showcase',
-    deployUrl: '',
-  },
-  {
-    id: 7,
-    title: 'DevFlow - Full-Stack Q&A Platform',
-    description:
-      'Eine ausgeklügelte, Community-getriebene Q&A-Plattform für Entwickler, nativ auf dem Next.js 14 App Router entwickelt, die Server Actions anstelle eines separaten API-Layers verwendet. Verfügt über ein robustes Tagging-System, eine globale Suche über Fragen, Antworten, Benutzer und Tags sowie personalisierte Empfehlungs-Feeds. Eine Reputations- und Badge-Engine gamifiziert die Teilnahme. Die Authentifizierung erfolgt über NextAuth.js (Google/GitHub OAuth + Credentials) mit Ende-zu-Ende Zod-Validierung. Zusätzlich generiert die OpenAI API umfassende KI-Antworten und Code-Snippets.',
+      'LMDB (Live Movies Database) ist eine Microservices-Plattform, die die TMDB-v3-API nachbildet, sodass die React-App sie anstelle von api.themoviedb.org nutzen kann. Sie speichert Film- und Schauspielerdaten bei der ersten Anfrage und liefert sie danach aus der eigenen Datenbank. Sie besteht aus 8 Spring-Boot-Services auf Java 25 mit Spring Cloud und nutzt MongoDB, PostgreSQL 17 und Redis. Eine lokale KI-Schicht (Spring AI, Ollama, pgvector) bietet Chat, semantische Suche und Suche in natürlicher Sprache, Vosk liefert Offline-Sprachsteuerung. Es wird keine kostenpflichtige KI-API genutzt. Terraform deployt auf Azure AKS oder AWS k3s mit 0-$-Budget. Dazu kommen 1.157 automatisierte Tests, 24 ADRs und CI/CD mit GitHub Actions.',
     tech: [
-      'Next.js 14',
-      'TypeScript 5',
-      'MongoDB Atlas',
-      'Tailwind CSS',
-      'OpenAI API',
-      'NextAuth',
-      'Zod',
+      'Java 25',
+      'Spring Boot 4.1',
+      'Spring Cloud',
+      'Spring AI',
+      'Ollama',
+      'pgvector',
+      'PostgreSQL 17',
+      'MongoDB 8',
+      'Redis',
+      'React 19',
+      'Terraform',
+      'Kubernetes',
+      'GitHub Actions',
     ],
-    githubUrl: 'https://github.com/pehlivanu/devflow',
-    deployUrl: 'https://devflow-chi-roan.vercel.app/',
+    githubUrl: 'https://github.com/liviuionesi/lmdb.dev',
+    deployUrl: 'https://lmdb.dev',
   },
-  {
-    id: 8,
-    title: 'Python GUI Automation Framework',
-    description:
-      'Eine widerstandsfähige, plattformübergreifende Python-Desktop-Anwendung mit Tkinter-GUI zur Automatisierung und Steuerung einer Android-Anwendung. Nutzt OpenCV-Template-Matching zur visuellen Erkennung und Interaktion mit dynamischen UI-Elementen via Android Debug Bridge (ADB), ganz ohne vorausgesetzte APIs. Integriert menschenähnliche Interaktionsprofile – leichte Koordinaten-Varianz und zufälliges Timing –, um Bot-Erkennungssysteme zu umgehen. Lauffähig als GUI-Applikation oder headless als Linux-Daemon.',
-    tech: ['Python 3.10', 'OpenCV', 'Tkinter', 'ADB', 'Bash'],
-    githubUrl: 'https://github.com/pehlivanu/gui-automation-framework',
-    deployUrl: '',
-  },
-  /*
-  {
-    id: 11,
-    title: "Alana Windsurf",
-    description:
-      "Eine skalierbare Full-Stack-Webanwendung auf Basis des Next.js 13+ App Routers und React 18+. Bietet eine umfassende Authentifizierung über NextAuth.js — OAuth (Google, GitHub) sowie sichere E-Mail/Passwort-Credentials — mit Datenspeicherung in MongoDB via Mongoose. Das State-Management wird über React Context und useReducer abgewickelt. Formulare werden robust mittels React Hook Form und Zod validiert, und das UI-Styling erfolgt über Material UI und Emotion.",
-    tech: ["Next.js 13+", "React 18+", "Material UI", "NextAuth.js", "MongoDB", "Zod"],
-    githubUrl: "https://github.com/pehlivanu/alana-windsurf",
-    deployUrl: "",
-  },
-  {
-    id: 12,
-    title: "Payload E-Commerce Platform",
-    description:
-      "Eine umfangreiche E-Commerce-Lösung, die das Payload CMS Framework mit einem statischen Next.js Frontend kombiniert. Umfasst ein voll funktionsfähiges Backend mit einem Enterprise-Admin-Panel, das sowohl physische Produkte als auch Paywall-geschützte Inhalte verwaltet. Sicher integriert mit Stripe-Webhooks zur reibungslosen Zahlungsabwicklung.",
-    tech: ["Next.js", "Payload CMS", "Stripe", "React Hook Form"],
-    githubUrl: "https://github.com/pehlivanu/e-commerce",
-    deployUrl: "",
-  },
-*/
 ];
 
 export const linkedInProfile: LinkedInProfile = {
   name: 'Liviu Ionesi',
-  headline: 'Tech Lead | Senior Full-Stack Engineer | Java, Spring Boot, React, Next.js',
+  headline:
+    'Lead Software Engineer (Full-Stack) | Java & Spring Boot · React & Next.js · Software-Modernisierung',
   location: 'Freiwaldaustr. 39, 73230 Kirchheim unter Teck, Deutschland',
   phone: '+49 1514 6966 832',
   address: 'Freiwaldaustr. 39, 73230 Kirchheim unter Teck',
   email: 'ionesiliviu@yahoo.com',
   connections: '500+',
   about:
-    'Technical Lead & Senior Full-Stack Engineer. Ich baue das digitale Rückgrat der Automobil- und Fintech-Branche. Mit über 13 Jahren Erfahrung in der Entwicklung hochgradig performanter, verteilter Systeme liegt mein Schwerpunkt auf technischer Leitung, der Modernisierung von Legacy-Architekturen und der Bereitstellung skalierbarer, Cloud-nativer Lösungen.',
-  fullBio: `### **Technical Lead & Senior Full-Stack Engineer | Automotive & FinTech Specialist**
+    'Pragmatischer Lead Software Engineer (Full-Stack) mit über 12 Jahren Praxiserfahrung in der Architektur, Modernisierung und Entwicklung geschäftskritischer Unternehmensanwendungen in den Bereichen Automotive, Banking und Versicherungen.',
+  fullBio: `Pragmatischer **Lead Software Engineer (Full-Stack)** mit über 12 Jahren Praxiserfahrung in der Architektur, Modernisierung und Entwicklung geschäftskritischer Unternehmensanwendungen in den Bereichen **Automotive, Banking und Versicherungen**.
 
-Mit über 13 Jahren Erfahrung in der Entwicklung hochperformanter verteilter Systeme bin ich auf technische Leitung, die Modernisierung veralteter Architekturen und die Bereitstellung skalierbarer, cloud-nativer Lösungen spezialisiert. Mein beruflicher Werdegang reicht von der Entwicklung kritischer Automatisierungs-Frameworks bei **Alpine Electronics** bis hin zur Vorantreibung der digitalen Transformation von Enterprise-Datenplattformen bei der **DAT Group**. Ich zeichne mich dadurch aus, funktionsübergreifende Teams anzuleiten, um mit modernen Technologie-Stacks robuste Software zu entwickeln.
+Spezialisiert auf die schrittweise Transformation veralteter Monolithen und Java-EE-Landschaften in hochverfügbare, skalierbare Microservice-Plattformen auf Basis von Java, Spring Boot, React/TypeScript und Azure Kubernetes Services (AKS). Verbindet fundierte Architekturentscheidungen mit aktiver Hands-on-Entwicklung, etabliert verbindliche Qualitätsstandards sowie CI/CD-Quality-Gates (JaCoCo, SonarQube, E2E-Playwright, OpenRewrite) und begleitet Entwicklerteams durch gezielten Wissenstransfer.
 
-Ich schließe die Lücke zwischen komplexer Backend-Logik, intuitiven Frontend-Erlebnissen und strategischen Geschäftszielen. Meine Kernkompetenzen umfassen:
-
-  * **Technische Leitung & Architektur**: Systemdesign vorantreiben und die Migration monolithischer **Java EE**-Anwendungen hin zu skalierbaren **Microservices** (Spring Boot, Azure) und modernen Frontends (React/Next.js) befürworten, was die Systemausfallsicherheit deutlich verbessert.
-  * **Full-Stack Engineering Exzellenz**: Entwurf und Entwicklung responsiver, nutzerzentrierter Schnittstellen mit **React, Next.js und TypeScript**, nahtlos integriert mit robusten, sicheren **Java 21 / Spring Boot** APIs.
-  * **DevOps & Quality Culture**: Eintreten für **TDD**, **Clean Code** Prinzipien und Etablierung von CI/CD-Automatisierung (Azure, GitHub Actions), um eine qualitativ hochwertige, vorhersehbare Softwarebereitstellung zu gewährleisten. Mentoring von Entwicklerteams zur Anhebung ihrer technischen Standards.
-  * **KI-gestütztes Engineering**: Wegbereiter für schnelle Softwarebereitstellung durch die Verschmelzung von Enterprise-Rigor (Epics, Agile/Scrum, CI/CD) mit fortschrittlichen, KI-integrierten Workflows (Cursor, Windsurf). Dieser Ansatz beschleunigt die Neuentwicklung und optimiert das Refactoring komplexer Legacy-Monolithen, wodurch technische Schulden effektiv abgebaut werden.
-
----
-*Derzeit auf der Suche nach einer Rolle als Technical Lead im Spring Boot- und React-Ökosystem. Offen für Hybrid-Positionen im Großraum Stuttgart oder 100% Remote innerhalb Deutschlands.*`,
+* **7 Jahre Legacy-Modernisierung & Entflechtung:** Transformation gewachsener Java-EE- / SOA-Monolithen, WebSphere-Architekturen und relationaler Datenbanksysteme (Oracle SQL, IBM DB2) in zukunftssichere Microservice-Landschaften.
+* **5 Jahre Cloud-Native & Full-Stack Platform Engineering:** Aufbau hochverfügbarer Microservice-Ökosysteme mit Spring Boot (4.1/3.5), Polyglot Persistence (PostgreSQL, MongoDB, Redis) und typsicheren React 19 / Next.js 16 / TypeScript Frontends.
+* **3 Jahre AI-Driven SDLC Automation & Quality Gates:** Praktischer Einsatz moderner KI-gestützter Entwicklungswerkzeuge (Claude Code, Cursor, Spring AI), um den Entwicklungszyklus zu beschleunigen und technische Schulden nachhaltig zu eliminieren.`,
   linkedinBio: `Technical Lead und Senior Full-Stack Engineer mit über 10 Jahren Erfahrung in der Entwicklung, Modernisierung und Architektur geschäftskritischer Unternehmensanwendungen in den Bereichen Automotive, Banking und Versicherungen.
 
 Umfassende Expertise in der Konzeption moderner Softwarearchitekturen, der Transformation von Legacy-Systemen zu Microservice-Plattformen sowie der technischen Führung von Entwicklungsinitiativen. Langjährige Erfahrung in der Entwicklung skalierbarer Backend- und Frontend-Lösungen mit Java, Spring Boot und React sowie im Aufbau moderner Cloud- und DevOps-Plattformen.
@@ -479,44 +407,44 @@ Verbindet technische Exzellenz mit pragmatischen Architekturentscheidungen und u
 * Übersetzung von Business-Anforderungen in tragfähige technische Lösungen`,
   avatarUrl: '/images/linkedin-profile.png',
   skills: [
-    'Java',
-    'Spring Boot',
-    'Spring Cloud',
-    'React',
-    'Next.js',
-    'Azure',
-    'Docker',
-    'Kubernetes',
-    'SQL/NoSQL',
-    'IntelliJ IDEA',
-    'KI Tools (Cursor, Windsurf, Antigravity, MCP)',
+    'Leadership & Transformation',
+    'Backend & Microservices',
+    'Datenbanken & Persistence',
+    'Frontend & Web UI',
+    'Cloud, IaC & DevOps',
+    'Qualität & CI/CD Automation',
+    'KI & LLM-Engineering',
   ],
   certifications: [
-    { name: 'Oracle Certified Professional, Java SE 6 Programmer', authority: 'Oracle', url: '' },
     {
-      name: 'Oracle Certified Expert Java EE 6 Web Components Developer',
+      name: 'Oracle Certified Professional, Java SE 6 Programmer (OCPJP)',
       authority: 'Oracle',
       url: '',
     },
     {
-      name: 'Pega 7.1 Certified System Architect',
+      name: 'Oracle Certified Expert, Java EE 6 Web Components Developer (OCE WCD)',
+      authority: 'Oracle',
+      url: '',
+    },
+    {
+      name: 'Pega 7.1 Certified System Architect (CSA)',
       authority: 'Pegasystems',
       url: 'https://pdn.pega.com/pega-academy/verify-certification?fname=Liviu-Lucian&lname=Ionesi',
     },
     {
-      name: 'The Complete Guide to Becoming a Software Architect',
-      authority: 'Udemy',
-      url: 'https://www.udemy.com/certificate/UC-5a84800c-8893-4d20-97ec-fa513267d795/',
+      name: 'Microsoft Certified: Programming in HTML5 with JavaScript and CSS3 (Exam 70-480)',
+      authority: 'Microsoft',
+      url: '',
     },
     {
-      name: 'Microservices Architecture - The Complete Guide',
+      name: 'Software Architecture, Microservices & Azure DevOps',
       authority: 'Udemy',
       url: 'https://www.udemy.com/certificate/UC-52b76175-4ab7-464f-9117-baf905ac24c2/',
     },
     {
       name: 'Spring Boot Microservices and Spring Cloud',
       authority: 'Udemy',
-      url: 'http://ude.my/UC-70ca993d-e60a-436f-8673-739a57fe54da',
+      url: 'https://ude.my/UC-70ca993d-e60a-436f-8673-739a57fe54da',
     },
     {
       name: 'Azure DevOps Fundamentals for Beginners',
@@ -525,10 +453,10 @@ Verbindet technische Exzellenz mit pragmatischen Architekturentscheidungen und u
     },
   ],
   languages: [
-    { language: 'Deutsch', proficiency: 'Verhandlungssicher' },
-    { language: 'Englisch', proficiency: 'Verhandlungssicher' },
-    { language: 'Rumänisch', proficiency: 'Muttersprache' },
-    { language: 'Französisch', proficiency: 'Grundkenntnisse' },
+    { language: 'Deutsch', proficiency: 'Verhandlungssicher (C1)' },
+    { language: 'Englisch', proficiency: 'Verhandlungssicher (C1)' },
+    { language: 'Rumänisch', proficiency: 'Muttersprache (C2)' },
+    { language: 'Französisch', proficiency: 'Grundkenntnisse (A2)' },
   ],
 };
 
@@ -538,7 +466,7 @@ export const about: AboutData = {
   suffix: '.io',
   lastName: 'NESI',
   description:
-    'Technical Lead & Senior Full-Stack Engineer. Ich baue das digitale Rückgrat der Automobil- und Fintech-Branche. Mein Fokus liegt auf Spring Boot-Microservices, React-Frontends und der Steuerung hochfrequenter Enterprise-Softwarebereitstellung durch KI-gestützte Workflows.',
+    'Pragmatischer Lead Software Engineer (Full-Stack) mit über 12 Jahren Praxiserfahrung in der Architektur, Modernisierung und Entwicklung geschäftskritischer Unternehmensanwendungen in den Bereichen Automotive, Banking und Versicherungen.',
   fullBio: linkedInProfile.fullBio,
   ctaPrimary: 'Projekte, nicht nur Code',
   ctaSecondary: 'Kontaktieren Sie mich',

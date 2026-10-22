@@ -92,12 +92,12 @@ export default function ATSHeader({
             {' | '}
             {t('github')}:{' '}
             <a
-              href="https://github.com/pehlivanu"
+              href="https://github.com/liviuionesi"
               target="_blank"
               rel="noopener noreferrer"
               className="whitespace-nowrap hover:text-blue-600 hover:underline"
             >
-              github.com/pehlivanu
+              github.com/liviuionesi
             </a>
           </p>
         </address>
