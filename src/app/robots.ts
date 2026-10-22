@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/cv', '/cv-ats', '/cv-markdown'],
     },
-    sitemap: 'https://liviuionesi.com/sitemap.xml',
+    sitemap: 'https://www.liviuionesi.com/sitemap.xml',
   };
 }

@@ -49,7 +49,7 @@ describe('Datenschutzerklärung', () => {
 describe('sitemap', () => {
   it('lists both legal pages', () => {
     const urls = sitemap().map((entry) => entry.url);
-    expect(urls).toContain('https://liviuionesi.com/impressum');
-    expect(urls).toContain('https://liviuionesi.com/datenschutz');
+    expect(urls).toContain('https://www.liviuionesi.com/impressum');
+    expect(urls).toContain('https://www.liviuionesi.com/datenschutz');
   });
 });

@@ -4,7 +4,7 @@ import { IMPRESSUM } from '@/data/legal';
 
 export const metadata: Metadata = {
   title: 'Impressum',
-  alternates: { canonical: 'https://liviuionesi.com/impressum' },
+  alternates: { canonical: 'https://www.liviuionesi.com/impressum' },
 };
 
 export default function ImpressumPage() {

@@ -11,4 +11,11 @@ describe('Footer', () => {
       '/datenschutz'
     );
   });
+
+  it('links to brevier.dev without nofollow', () => {
+    render(<Footer />);
+    const link = screen.getByRole('link', { name: /Brevier/ });
+    expect(link).toHaveAttribute('href', 'https://www.brevier.dev');
+    expect(link.getAttribute('rel') ?? '').not.toContain('nofollow');
+  });
 });

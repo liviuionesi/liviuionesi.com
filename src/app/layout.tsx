@@ -27,19 +27,19 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://liviuionesi.com'),
+  metadataBase: new URL('https://www.liviuionesi.com'),
   title: {
     default: 'Liviu Ionesi — Technical Lead & Senior Full-Stack Engineer',
     template: '%s | Liviu Ionesi',
   },
   description:
     'Liviu Ionesi — Technical Lead & Senior Full-Stack Engineer building the digital backbone of the Automotive and Fintech industries with Spring Boot & React.',
-  alternates: { canonical: 'https://liviuionesi.com' },
+  alternates: { canonical: 'https://www.liviuionesi.com' },
   openGraph: {
     title: 'Liviu Ionesi — Technical Lead & Senior Full-Stack Engineer',
     description:
       'Building the digital backbone of the Automotive and Fintech industries. Spring Boot microservices, React frontends, and AI-augmented software delivery.',
-    url: 'https://liviuionesi.com',
+    url: 'https://www.liviuionesi.com',
     siteName: 'Liviu Ionesi Portfolio',
     locale: 'en_US',
     type: 'website',

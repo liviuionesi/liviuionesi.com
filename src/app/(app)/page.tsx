@@ -11,7 +11,7 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Liviu Ionesi',
-    url: 'https://liviuionesi.com',
+    url: 'https://www.liviuionesi.com',
     jobTitle: 'Technical Lead & Senior Full-Stack Engineer',
     description:
       'Technical Lead & Senior Full-Stack Engineer. Building the digital backbone of the Automotive and Fintech industries. I specialize in Spring Boot microservices, React frontends, and driving high-velocity, enterprise-grade software delivery through AI-augmented workflows.',
@@ -25,8 +25,14 @@ export default function Home() {
       'Fintech',
       'Enterprise Software Architecture',
     ],
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Brevier',
+      alternateName: 'Liviu Ionesi Solutions',
+      url: 'https://www.brevier.dev',
+    },
     sameAs: [
-      'https://github.com/pehlivanu',
+      'https://github.com/liviuionesi',
       'https://linkedin.com/in/liviu-ionesi',
       'https://www.xing.com/profile/Liviu_Ionesi/web_profile',
     ],

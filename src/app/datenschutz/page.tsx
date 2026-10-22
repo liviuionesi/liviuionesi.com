@@ -4,7 +4,7 @@ import { DATENSCHUTZ } from '@/data/legal';
 
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
-  alternates: { canonical: 'https://liviuionesi.com/datenschutz' },
+  alternates: { canonical: 'https://www.liviuionesi.com/datenschutz' },
 };
 
 export default function DatenschutzPage() {
