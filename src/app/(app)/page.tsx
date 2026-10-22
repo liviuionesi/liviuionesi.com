@@ -27,9 +27,9 @@ export default function Home() {
     ],
     worksFor: {
       '@type': 'Organization',
-      name: 'Brevier',
-      alternateName: 'Liviu Ionesi Solutions',
+      name: 'Liviu Ionesi Solutions',
       url: 'https://www.brevier.dev',
+      brand: { '@type': 'Brand', name: 'Brevier' },
     },
     sameAs: [
       'https://github.com/liviuionesi',

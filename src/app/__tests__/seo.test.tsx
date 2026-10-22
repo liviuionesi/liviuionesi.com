@@ -20,7 +20,11 @@ describe('SEO links', () => {
     const script = container.querySelector('script[type="application/ld+json"]');
     const data = JSON.parse(script?.textContent ?? '{}');
     expect(data.url).toBe('https://www.liviuionesi.com');
-    expect(data.worksFor).toMatchObject({ name: 'Brevier', url: 'https://www.brevier.dev' });
+    expect(data.worksFor).toMatchObject({
+      name: 'Liviu Ionesi Solutions',
+      url: 'https://www.brevier.dev',
+      brand: { name: 'Brevier' },
+    });
     expect(data.sameAs).toContain('https://github.com/liviuionesi');
   });
 });
