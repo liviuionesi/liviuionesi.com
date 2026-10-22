@@ -2,11 +2,11 @@
 
 ## Technical Lead | Senior Full-Stack-Entwickler
 
-| Kontakt & Adresse                                                                                                                                | Online Profile                                        |
-| :----------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------- |
-| [Freiwaldaustr. 39, 73230 Kirchheim unter Teck](https://www.google.com/maps/search/?api=1&query=Freiwaldaustr.+39%2C+73230+Kirchheim+unter+Teck) | [www.liviuionesi.com](https://www.liviuionesi.com)    |
-| [+49 1514 6966832](tel:+4915146966832)                                                                                                           | [ionesiliviu@yahoo.com](mailto:ionesiliviu@yahoo.com) |
-| [linkedin.com/in/liviu-ionesi](https://www.linkedin.com/in/liviu-ionesi)                                                                         | [github.com/pehlivanu](https://github.com/pehlivanu)  |
+| Kontakt & Adresse                                                                                                                                | Online Profile                                           |
+| :----------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
+| [Freiwaldaustr. 39, 73230 Kirchheim unter Teck](https://www.google.com/maps/search/?api=1&query=Freiwaldaustr.+39%2C+73230+Kirchheim+unter+Teck) | [www.liviuionesi.com](https://www.liviuionesi.com)       |
+| [+49 1514 6966832](tel:+4915146966832)                                                                                                           | [ionesiliviu@yahoo.com](mailto:ionesiliviu@yahoo.com)    |
+| [linkedin.com/in/liviu-ionesi](https://www.linkedin.com/in/liviu-ionesi)                                                                         | [github.com/liviuionesi](https://github.com/liviuionesi) |
 
 ## KURZPROFIL
 
@@ -185,62 +185,42 @@ Entwicklung von Testautomatisierungslösungen im Automotive-Umfeld.
 
 ## PROJEKTE
 
-### Filmpire Microservices Platform
+### liviuionesi.com
 
-**[GitHub: pehlivanu/filmpire-microservices](https://github.com/pehlivanu/filmpire-microservices)** | _Java 25, Spring Boot 3.5, Spring Cloud, PostgreSQL, MongoDB, Redis, Spring AI_
+**[GitHub: liviuionesi/liviuionesi.com](https://github.com/liviuionesi/liviuionesi.com)** | _Next.js 16, TypeScript, Tailwind CSS v4, Framer Motion, NextAuth.js, Jest_
 
-Ganzheitliche Enterprise-Microservices-Plattform zur Entdeckung von Filmen, von der ersten Idee bis zum einsatzbereiten Produkt.
+Interaktives Entwickler-Portfolio im Design der Google Antigravity IDE.
 
-- **Backend & Cloud:** 8 unabhängige Java 25 / Spring Boot 3.5 Services inkl. Spring Cloud (Eureka, API Gateway), PostgreSQL/MongoDB, Redis-Cache.
-- **KI & Architektur:** Integration von Spring AI (Whisper/GPT-4) via REST und gRPC; Nutzung von Record-DTOs und Virtual Threads.
-- **Qualität & DevOps:** Abgesichert durch JUnit 5, Testcontainers (85% JaCoCo Coverage) und GitHub Actions CI/CD; Deployment via Kubernetes (Minikube).
+- **Frontend:** Next.js 16 App Router mit React Compiler, Command Palette, Explorer und Framer Motion Animationen.
+- **Features:** 4 Sprachen, CV-Export als PDF, Kontaktformular mit Google-Anmeldung und Geolocation API.
+- **Qualität:** 97 % Testabdeckung (Jest, React Testing Library), Husky, ESLint, Prettier; 100/100 Lighthouse-Score.
 
-### Defense Asset Manager
+### brevier.dev
 
-**[GitHub: pehlivanu/defense-asset-manager](https://github.com/pehlivanu/defense-asset-manager)** | _React 19, Vite, Zustand, Material UI v9, MSW, OpenAPI 3.1, TypeScript_
+**[brevier.dev](https://www.brevier.dev)** | _Nuxt 4, TypeScript, Vitest, Playwright, i18n_
 
-Moderne React 19 Enterprise-Anwendung für das Asset- und Personalmanagement im Verteidigungssektor.
+Website und Dokumentation der PDF-Bibliothek Brevier (HTML + CSS + JSON = PDF).
 
-- **Architektur:** Strikte Feature-basierte (Domain-Driven) Architektur zur Unterstützung einer SAFe-Bereitstellung über mehrere Teams.
-- **API & Mocking:** Contract-First-Ansatz (OpenAPI 3.1) mit Mock Service Worker (MSW) für unabhängige Entwicklung.
-- **State & UI:** State-Management mit Zustand + Immer; barrierefreie Material UI v9-Komponenten mit sicherheitskritischer UX.
+- **Bibliothek:** Clients für Python, C#, TypeScript und Java; DIN 5008, Silbentrennung, E-Rechnung (ZUGFeRD / Factur-X).
+- **Website:** Statisch vorgerendert mit Nuxt 4, keine Framework-Skripte in Produktion, DE/EN.
+- **Datenschutz & Qualität:** Keine Cookies, kein Tracking; 100/100 Lighthouse-Score.
 
-### Antigravity IDE Portfolio
+### karcher.liviuionesi.com
 
-**[GitHub: pehlivanu/portfolio-site](https://github.com/pehlivanu/portfolio-site)** | _Next.js 15, TypeScript, Tailwind CSS, Geolocation API, PDF Generation, Framer Motion_
+**[karcher.liviuionesi.com](https://karcher.liviuionesi.com)** | _Python, MQTT, Next.js, Capacitor, InfluxDB, Docker Compose, Terraform, AWS_
 
-Hochgradig interaktives Entwickler-Portfolio, das die Ästhetik der internen Google Antigravity IDE detailliert nachbildet.
+Lösung der Software-Architect-Challenge von Kärcher für 1.000 Roboter und 100 Bediener.
 
-- **Frontend-Exzellenz:** Next.js 15 App Router mit komplexen UI-Komponenten (Command Palette, Explorer) und immersiven Framer Motion Animationen.
-- **Features:** Automatisierte PDF-Generierung des Lebenslaufs in mehreren Vorlagen und Sprachen.
-- **Innovation:** Dynamisches Kontaktformular mit Geolocation API zur Berechnung der physischen Distanz zum Besucher.
+- **Architektur:** AWS-Design (IoT Core, Kinesis, Valkey, EKS, Cognito, Terraform) als arc42-Dokument mit ADRs.
+- **Prototyp:** Mosquitto mit TLS und Login pro Roboter, Python-Backend, Next.js-Dashboard, Android-App (Capacitor).
+- **Betrieb:** Start mit einem docker-compose-Befehl; Demo live mit simulierten Robotern; Quellcode privat.
 
-### Filmpire Frontend
+### lmdb.dev
 
-**[GitHub: pehlivanu/filmpire](https://github.com/pehlivanu/filmpire)** | _React 17, Material-UI, Redux Toolkit, Alan AI_
+**[GitHub: liviuionesi/lmdb.dev](https://github.com/liviuionesi/lmdb.dev)** | _Java 25, Spring Boot 4.1, Spring Cloud, Spring AI, PostgreSQL, MongoDB, Redis, React 19_
 
-Moderne, interaktive React-Anwendung als dedizierter Frontend-Client für das Filmpire Microservices-Backend.
+Microservices-Plattform, die die TMDB-v3-API nachbildet, mit lokaler KI-Schicht.
 
-- **UI & State:** Entwicklung performanter Komponenten mit React 17, Material-UI und Redux Toolkit; TMDB API-Integration.
-- **KI-Integration:** Vollständig konversationelle Sprachsteuerung über das Alan AI SDK.
-- **Qualitätssicherung:** Etablierung des Airbnb-Standards (ESLint) sowie umfassende Tests mit Jest und React Testing Library.
-
-### DevOps Toolchain Showcase
-
-**[GitHub: pehlivanu/devops-toolchain-showcase](https://github.com/pehlivanu/devops-toolchain-showcase)** | _Jenkins, JFrog Artifactory, Podman, Gradle, Java 17_
-
-Vollständige, containerisierte CI/CD-Toolchain zur Demonstration moderner Enterprise-DevOps-Praktiken (orchestriert über Podman Compose).
-
-- **Pipelines:** Automatisierte Build-, Test- und Deployment-Pipelines mit angepasstem Jenkins-Server (DooD) und JFrog Artifactory.
-- **Qualitätssicherung:** Integriertes JaCoCo Code-Coverage-Reporting und automatisiertes Artefakt-Publishing.
-- **Tooling & Integration:** Entwicklung eigener Bash-, curl- und jq-Skripte zur Metrik-Übertragung per REST-API an externe ALM/MQC-Systeme.
-
-### DevFlow - Full-Stack Q&A Platform
-
-**[GitHub: pehlivanu/devflow](https://github.com/pehlivanu/devflow)** | _Next.js 14, TypeScript 5, MongoDB Atlas, Tailwind CSS, OpenAI API_
-
-Community-getriebene Q&A-Plattform für Entwickler mit robustem Tagging-System, globaler Suche und personalisierten Feeds.
-
-- **Full-Stack:** Next.js 14 App Router mit Server Actions, NextAuth.js (OAuth + Credentials) und Zod-Validierung.
-- **Features:** Integrierte Reputations- und Badge-Engine zur Gamifizierung der Nutzerteilnahme.
-- **KI-Unterstützung:** Generierung umfassender Antworten und Code-Snippets via OpenAI API.
+- **Backend:** 8 Spring-Boot-Services mit Spring Cloud; PostgreSQL 17, MongoDB 8, Redis; gRPC.
+- **KI:** Spring AI, Ollama und pgvector für Chat und semantische Suche; Offline-Sprachsteuerung mit Vosk.
+- **Qualität & Cloud:** 1.157 Tests, 24 ADRs, GitHub Actions; Terraform für Azure AKS und AWS k3s.
