@@ -11,6 +11,7 @@ on:
 jobs:
   update-project:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Update project board
         uses: actions/add-to-project@v0.5.0
@@ -20,21 +21,23 @@ jobs:
 
   auto-assign-issue:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: github.event_name == 'issues' && github.event.action == 'opened'
     steps:
       - name: Auto-assign issue to creator
         uses: actions/github-script@v7
         with:
           script: |
-            github.rest.issues.addAssignees({
+            await github.rest.issues.addAssignees({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              assignees: [context.actor]
+              assignees: [context.payload.issue.user.login]
             });
 
   auto-label-by-path:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@v4
@@ -72,6 +75,7 @@ jobs:
 
   link-pr-to-issue:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: github.event_name == 'pull_request' && github.event.action == 'opened'
     steps:
       - name: Link PR to issue via branch name
@@ -98,6 +102,7 @@ jobs:
 
   notify-ready-for-review:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: |
       github.event_name == 'pull_request' && 
       github.event.action == 'ready_for_review'
@@ -115,6 +120,7 @@ jobs:
 
   celebrate-merge:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: |
       github.event_name == 'pull_request' && 
       github.event.action == 'closed' && 
